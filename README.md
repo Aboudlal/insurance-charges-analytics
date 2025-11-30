@@ -3,7 +3,7 @@
 ### *Storytelling + Data Warehouse + OLAP + Power BI*
 
 
-![cover](C:\Repos\insurance-charges-analytics\docs\images\cover.png)
+![cover](https://github.com/Aboudlal/insurance-charges-analytics/blob/main/docs/images/cover.png)
 
 ------------------------------------------------------------------------
 

@@ -115,6 +115,11 @@ OLAP operations performed: - **Slicing**: filter on smoker\
 - **Dicing**: multiple filters (e.g., obese + smoker + southeast)\
 - **Drilldown**: Region → BMI → Age → Smoker
 
+Powerbi dashboard location:
+
+    data/results
+
+![Powerbi dashboard](https://github.com/Aboudlal/insurance-charges-analytics/blob/main/docs/images/BI.png)
 ------------------------------------------------------------------------
 
 # **5. Storytelling & Results**

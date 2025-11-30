@@ -1,0 +1,202 @@
+2025-10-28 16:51:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-10-28 16:51:INFO    AT data_prep.py:52: Starting data preparation...
+2025-10-28 16:51:INFO    AT data_prep.py:32: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-10-28 16:51:INFO    AT data_prep.py:35: customers_data.csv: loaded DataFrame with shape 201 rows x 4 cols
+2025-10-28 16:51:INFO    AT data_prep.py:32: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-10-28 16:51:INFO    AT data_prep.py:35: products_data.csv: loaded DataFrame with shape 100 rows x 4 cols
+2025-10-28 16:51:INFO    AT data_prep.py:32: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-10-28 16:51:INFO    AT data_prep.py:35: sales_data.csv: loaded DataFrame with shape 2001 rows x 7 cols
+2025-10-28 16:51:INFO    AT data_prep.py:64: Data preparation complete.
+2025-11-04 23:10:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-04 23:10:INFO    AT data_prep.py:170: Starting comprehensive data preparation using DataScrubber...
+2025-11-04 23:10:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-04 23:10:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-04 23:10:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-04 23:10:INFO    AT data_prep.py:101:   -> Customer data cleaned. Final shape: (201, 7)
+2025-11-04 23:10:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-04 23:10:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-04 23:10:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-04 23:10:INFO    AT data_prep.py:110:   -> Cleaning Product Data...
+2025-11-04 23:10:INFO    AT data_prep.py:132:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-04 23:10:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-04 23:10:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-04 23:10:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-04 23:10:INFO    AT data_prep.py:141:   -> Cleaning Sales Data...
+2025-11-04 23:11:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-04 23:11:INFO    AT data_prep.py:172: Starting comprehensive data preparation using DataScrubber...
+2025-11-04 23:11:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-04 23:11:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-04 23:11:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-04 23:11:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-04 23:11:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-04 23:11:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-04 23:11:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-04 23:11:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-04 23:11:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-04 23:11:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-04 23:11:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-04 23:11:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-04 23:11:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-04 23:12:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-04 23:12:INFO    AT data_prep.py:182: Starting comprehensive data preparation using DataScrubber...
+2025-11-04 23:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-04 23:12:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-04 23:12:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-04 23:12:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-04 23:12:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-04 23:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-04 23:12:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-04 23:12:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-04 23:12:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-04 23:12:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-04 23:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-04 23:12:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-04 23:12:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-04 23:12:INFO    AT data_prep.py:174:   -> Sales data cleaned. Final shape: (2000, 9)
+2025-11-04 23:12:INFO    AT data_prep.py:71: Successfully saved prepared data to sales_prepared.csv
+2025-11-04 23:12:INFO    AT data_prep.py:204: All data preparation complete. Files are ready in data/prepared.
+2025-11-04 23:13:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-04 23:13:INFO    AT data_prep.py:182: Starting comprehensive data preparation using DataScrubber...
+2025-11-04 23:13:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-04 23:13:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-04 23:13:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-04 23:13:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-04 23:13:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-04 23:13:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-04 23:13:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-04 23:13:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-04 23:13:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-04 23:13:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-04 23:13:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-04 23:13:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-04 23:13:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-04 23:13:INFO    AT data_prep.py:174:   -> Sales data cleaned. Final shape: (2000, 9)
+2025-11-04 23:13:INFO    AT data_prep.py:71: Successfully saved prepared data to sales_prepared.csv
+2025-11-04 23:13:INFO    AT data_prep.py:204: All data preparation complete. Files are ready in data/prepared.
+2025-11-04 23:50:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-04 23:50:INFO    AT data_prep.py:182: Starting comprehensive data preparation using DataScrubber...
+2025-11-04 23:50:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-04 23:50:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-04 23:50:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-04 23:50:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-04 23:50:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-04 23:50:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-04 23:50:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-04 23:50:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-04 23:50:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-04 23:50:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-04 23:50:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-04 23:50:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-04 23:50:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-04 23:50:INFO    AT data_prep.py:174:   -> Sales data cleaned. Final shape: (2000, 9)
+2025-11-04 23:50:INFO    AT data_prep.py:71: Successfully saved prepared data to sales_prepared.csv
+2025-11-04 23:50:INFO    AT data_prep.py:204: All data preparation complete. Files are ready in data/prepared.
+2025-11-05 13:55:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-05 13:55:INFO    AT data_prep.py:182: Starting comprehensive data preparation using DataScrubber...
+2025-11-05 13:55:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-05 13:55:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-05 13:55:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-05 13:55:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-05 13:55:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-05 13:55:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-05 13:55:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-05 13:55:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-05 13:55:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-05 13:55:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-05 13:55:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-05 13:55:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-05 13:55:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-05 13:55:INFO    AT data_prep.py:174:   -> Sales data cleaned. Final shape: (2000, 9)
+2025-11-05 13:55:INFO    AT data_prep.py:71: Successfully saved prepared data to sales_prepared.csv
+2025-11-05 13:55:INFO    AT data_prep.py:204: All data preparation complete. Files are ready in data/prepared.
+2025-11-05 13:57:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-05 13:57:INFO    AT data_prep.py:182: Starting comprehensive data preparation using DataScrubber...
+2025-11-05 13:57:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-05 13:57:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-05 13:57:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-05 13:57:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-05 13:57:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-05 13:57:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-05 13:57:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-05 13:57:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-05 13:57:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-05 13:57:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-05 13:57:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-05 13:57:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-05 13:57:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-05 13:57:INFO    AT data_prep.py:174:   -> Sales data cleaned. Final shape: (2000, 9)
+2025-11-05 13:57:INFO    AT data_prep.py:71: Successfully saved prepared data to sales_prepared.csv
+2025-11-05 13:57:INFO    AT data_prep.py:204: All data preparation complete. Files are ready in data/prepared.
+2025-11-05 14:12:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-05 14:12:INFO    AT data_prep.py:182: Starting comprehensive data preparation using DataScrubber...
+2025-11-05 14:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-05 14:12:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-05 14:12:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-05 14:12:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-05 14:12:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-05 14:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-05 14:12:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-05 14:12:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-05 14:12:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-05 14:12:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-05 14:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-05 14:12:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-05 14:12:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-05 14:12:INFO    AT data_prep.py:174:   -> Sales data cleaned. Final shape: (2000, 9)
+2025-11-05 14:12:INFO    AT data_prep.py:71: Successfully saved prepared data to sales_prepared.csv
+2025-11-05 14:12:INFO    AT data_prep.py:204: All data preparation complete. Files are ready in data/prepared.
+2025-11-05 14:12:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-05 14:12:INFO    AT data_prep.py:182: Starting comprehensive data preparation using DataScrubber...
+2025-11-05 14:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-05 14:12:INFO    AT data_prep.py:52: customers_data.csv: loaded DataFrame with shape 205 rows x 6 cols
+2025-11-05 14:12:INFO    AT data_prep.py:81:   -> Cleaning Customer Data...
+2025-11-05 14:12:INFO    AT data_prep.py:102:   -> Customer data cleaned. Final shape: (201, 6)
+2025-11-05 14:12:INFO    AT data_prep.py:71: Successfully saved prepared data to customers_prepared.csv
+2025-11-05 14:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv.
+2025-11-05 14:12:INFO    AT data_prep.py:52: products_data.csv: loaded DataFrame with shape 105 rows x 6 cols
+2025-11-05 14:12:INFO    AT data_prep.py:111:   -> Cleaning Product Data...
+2025-11-05 14:12:INFO    AT data_prep.py:133:   -> Product data cleaned. Final shape: (100, 6)
+2025-11-05 14:12:INFO    AT data_prep.py:71: Successfully saved prepared data to products_prepared.csv
+2025-11-05 14:12:INFO    AT data_prep.py:49: Reading raw data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv.
+2025-11-05 14:12:INFO    AT data_prep.py:52: sales_data.csv: loaded DataFrame with shape 2001 rows x 9 cols
+2025-11-05 14:12:INFO    AT data_prep.py:142:   -> Cleaning Sales Data...
+2025-11-05 14:12:INFO    AT data_prep.py:174:   -> Sales data cleaned. Final shape: (2000, 9)
+2025-11-05 14:12:INFO    AT data_prep.py:71: Successfully saved prepared data to sales_prepared.csv
+2025-11-05 14:12:INFO    AT data_prep.py:204: All data preparation complete. Files are ready in data/prepared.
+2025-11-05 14:13:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-05 14:13:INFO    AT demo_module_basics.py:90: Starting demo_python() function.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:37: Name Python files with lowercase and underscores.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:38: In Python, comments start with a '#' symbol and are not executed.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:39: Comments can also be wrapped in triple single quotes or triple backticks.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:43: Variables are used to store values.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:44: Type hints are optional but recommended for clarity.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:45:   example_number = 42
+2025-11-05 14:13:INFO    AT demo_module_basics.py:46:   count: int = 42
+2025-11-05 14:13:INFO    AT demo_module_basics.py:47:   temp_F: float = 42.2
+2025-11-05 14:13:INFO    AT demo_module_basics.py:48:   user_name: str = "Data Analyst"
+2025-11-05 14:13:INFO    AT demo_module_basics.py:54: Result: example_number=42, count=42, temp_f=42.2, user_name='Data Analyst'.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:58: Functions in Python are blocks of reusable code.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:59: You can call a function by using its name followed by parentheses.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:60: We use f-strings to combine text and values in Python.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:61:   Put the 'f' immediately before the opening quote of the string text.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:65: Python has many built-in functions, like min(), max(), and len().
+2025-11-05 14:13:INFO    AT demo_module_basics.py:70: For the list of numbers: [1, 2, 3]
+2025-11-05 14:13:INFO    AT demo_module_basics.py:71:   The minimum value is min(numbers): 1
+2025-11-05 14:13:INFO    AT demo_module_basics.py:72:   The maximum value is max(numbers): 3
+2025-11-05 14:13:INFO    AT demo_module_basics.py:73:   The length of the list is len(numbers): 3
+2025-11-05 14:13:INFO    AT demo_module_basics.py:78: In Python, indentation matters = True!
+2025-11-05 14:13:INFO    AT demo_module_basics.py:79: In Python, spelling matters = True!
+2025-11-05 14:13:INFO    AT demo_module_basics.py:80: In Python, uppercase/lowercase matters = True!
+2025-11-05 14:13:INFO    AT demo_module_basics.py:96: Experiment with this demo script to learn the basics quickly.
+2025-11-05 14:13:INFO    AT demo_module_basics.py:97: Exiting demo_python() function.
+2025-11-05 14:36:INFO    AT utils_logger.py:105: Logging to file: C:\Repos\smart-store-abdellah\project.log
+2025-11-05 14:36:INFO    AT demo_module_stats.py:98: 
+STATS SUMMARY
+Scores (n=7): [3.5, 4.0, 4.8, 2.9, 3.7, 4.3, 3.8]
+metric                 value
+----------------------------
+min                     2.90
+max                     4.80
+mean                    3.86
+stdev                   0.60
+

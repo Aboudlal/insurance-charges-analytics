@@ -1,0 +1,1259 @@
+2025-11-04 15:19:11.331 | INFO     | __main__:main:198 - ==================================
+2025-11-04 15:19:11.332 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-04 15:19:11.332 | INFO     | __main__:main:200 - ==================================
+2025-11-04 15:19:11.332 | INFO     | __main__:main:202 - Root         : C:\Repos\smart-store-abdellah
+2025-11-04 15:19:11.332 | INFO     | __main__:main:203 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-04 15:19:11.333 | INFO     | __main__:main:204 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-04 15:19:11.333 | INFO     | __main__:main:205 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-04 15:19:11.333 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-04 15:19:11.336 | INFO     | __main__:main:217 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-11-04 15:19:11.337 | INFO     | __main__:main:218 - Initial dataframe shape: (205, 6)
+2025-11-04 15:19:11.337 | INFO     | __main__:remove_duplicates:100 - FUNCTION START: remove_duplicates with dataframe shape=(205, 6)
+2025-11-04 15:19:11.339 | INFO     | __main__:remove_duplicates:111 - Original dataframe shape: (205, 6)
+2025-11-04 15:19:11.339 | INFO     | __main__:remove_duplicates:112 - Deduped  dataframe shape: (201, 6)
+2025-11-04 15:19:11.340 | INFO     | __main__:handle_missing_values:127 - FUNCTION START: handle_missing_values with dataframe shape=(201, 6)
+2025-11-04 15:19:11.340 | INFO     | __main__:handle_missing_values:131 - Total missing values before handling: 54
+2025-11-04 15:19:11.344 | INFO     | __main__:handle_missing_values:148 - Total missing values after handling: 0
+2025-11-04 15:19:11.345 | INFO     | __main__:handle_missing_values:149 - 201 records remaining after handling missing values.
+2025-11-04 15:19:11.345 | INFO     | __main__:remove_outliers:164 - FUNCTION START: remove_outliers with dataframe shape=(201, 6)
+2025-11-04 15:19:11.348 | INFO     | __main__:remove_outliers:184 - Removed 0 outlier rows
+2025-11-04 15:19:11.349 | INFO     | __main__:remove_outliers:185 - 201 records remaining after removing outliers.
+2025-11-04 15:19:11.349 | INFO     | __main__:save_prepared_data:80 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(201, 6)
+2025-11-04 15:19:11.351 | INFO     | __main__:save_prepared_data:85 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\customers_prepared.csv
+2025-11-04 15:19:11.352 | INFO     | __main__:main:243 - ==================================
+2025-11-04 15:19:11.352 | INFO     | __main__:main:244 - Original shape: (205, 6)
+2025-11-04 15:19:11.352 | INFO     | __main__:main:245 - Cleaned shape:  (201, 6)
+2025-11-04 15:19:11.353 | INFO     | __main__:main:246 - ==================================
+2025-11-04 15:19:11.353 | INFO     | __main__:main:247 - FINISHED prepare_customers_data.py
+2025-11-04 15:19:11.353 | INFO     | __main__:main:248 - ==================================
+2025-11-04 15:19:22.397 | INFO     | __main__:main:301 - ==================================
+2025-11-04 15:19:22.397 | INFO     | __main__:main:302 - STARTING prepare_products_data.py
+2025-11-04 15:19:22.397 | INFO     | __main__:main:303 - ==================================
+2025-11-04 15:19:22.397 | INFO     | __main__:main:305 - Root         : C:\Repos\smart-store-abdellah
+2025-11-04 15:19:22.398 | INFO     | __main__:main:306 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-04 15:19:22.398 | INFO     | __main__:main:307 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-04 15:19:22.398 | INFO     | __main__:main:308 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-04 15:19:22.398 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-04 15:19:22.398 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-04 15:19:22.402 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-04 15:19:22.403 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-04 15:19:22.404 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-04 15:19:22.406 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-04 15:19:22.406 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-04 15:19:22.406 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-04 15:19:22.408 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-04 15:19:22.409 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-04 15:19:22.410 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-04 15:19:22.412 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-04 15:19:22.412 | INFO     | __main__:main:323 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, SupplierName
+2025-11-04 15:19:22.412 | INFO     | __main__:main:324 - Initial dataframe shape: (105, 6)
+2025-11-04 15:19:22.413 | INFO     | __main__:main:335 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, SupplierName -> suppliername
+2025-11-04 15:19:22.413 | INFO     | __main__:remove_duplicates:108 - FUNCTION START: remove_duplicates with dataframe shape=(105, 6)
+2025-11-04 15:19:22.415 | INFO     | __main__:remove_duplicates:116 - Removed 5 duplicate rows
+2025-11-04 15:19:22.415 | INFO     | __main__:remove_duplicates:117 - 100 records remaining after removing duplicates.
+2025-11-04 15:19:22.416 | INFO     | __main__:handle_missing_values:132 - FUNCTION START: handle_missing_values with dataframe shape=(100, 6)
+2025-11-04 15:19:22.417 | INFO     | __main__:handle_missing_values:137 - Missing values by column before handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-04 15:19:22.418 | INFO     | __main__:handle_missing_values:172 - Missing values by column after handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-04 15:19:22.418 | INFO     | __main__:handle_missing_values:173 - 100 records remaining after handling missing values.
+2025-11-04 15:19:22.419 | INFO     | __main__:remove_outliers:188 - FUNCTION START: remove_outliers with dataframe shape=(100, 6)
+2025-11-04 15:19:22.422 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to unitprice: bounds [-518.0887499999999, 1544.90125]
+2025-11-04 15:19:22.424 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to stockquantity: bounds [-35.625, 141.375]
+2025-11-04 15:19:22.425 | INFO     | __main__:remove_outliers:216 - Removed 0 outlier rows
+2025-11-04 15:19:22.425 | INFO     | __main__:remove_outliers:217 - 100 records remaining after removing outliers.
+2025-11-04 15:19:22.425 | INFO     | __main__:validate_data:270 - FUNCTION START: validate_data with dataframe shape=(100, 6)
+2025-11-04 15:19:22.427 | INFO     | __main__:validate_data:278 - Validated productid: removed 0 invalid/duplicate rows
+2025-11-04 15:19:22.428 | INFO     | __main__:validate_data:293 - Data validation complete
+2025-11-04 15:19:22.428 | INFO     | __main__:standardize_formats:231 - FUNCTION START: standardize_formats with dataframe shape=(100, 6)
+2025-11-04 15:19:22.431 | INFO     | __main__:standardize_formats:256 - Completed standardizing formats
+2025-11-04 15:19:22.431 | INFO     | __main__:save_prepared_data:90 - FUNCTION START: save_prepared_data with file_name=products_prepared.csv, dataframe shape=(100, 6)
+2025-11-04 15:19:22.434 | INFO     | __main__:save_prepared_data:95 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\products_prepared.csv
+2025-11-04 15:19:22.434 | INFO     | __main__:main:355 - ==================================
+2025-11-04 15:19:22.435 | INFO     | __main__:main:356 - Original shape: (105, 6)
+2025-11-04 15:19:22.435 | INFO     | __main__:main:357 - Cleaned shape:  (100, 6)
+2025-11-04 15:19:22.435 | INFO     | __main__:main:358 - ==================================
+2025-11-04 15:19:22.435 | INFO     | __main__:main:359 - FINISHED prepare_products_data.py
+2025-11-04 15:19:22.436 | INFO     | __main__:main:360 - ==================================
+2025-11-04 15:19:32.261 | INFO     | __main__:main:199 - ==================================
+2025-11-04 15:19:32.262 | INFO     | __main__:main:200 - STARTING prepare_sales_data.py
+2025-11-04 15:19:32.262 | INFO     | __main__:main:201 - ==================================
+2025-11-04 15:19:32.263 | INFO     | __main__:main:203 - Root         : C:\Repos\smart-store-abdellah
+2025-11-04 15:19:32.263 | INFO     | __main__:main:204 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-04 15:19:32.263 | INFO     | __main__:main:205 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-04 15:19:32.263 | INFO     | __main__:main:206 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-04 15:19:32.264 | INFO     | __main__:read_raw_data:178 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-04 15:19:32.264 | INFO     | __main__:read_raw_data:180 - Reading data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv
+2025-11-04 15:19:32.269 | INFO     | __main__:read_raw_data:182 - Loaded dataframe with 2001 rows and 9 columns
+2025-11-04 15:19:32.270 | INFO     | __main__:read_raw_data:184 - Column datatypes: 
+TransactionID        int64
+SaleDate            object
+CustomerID           int64
+ProductID            int64
+StoreID              int64
+CampaignID         float64
+SaleAmount          object
+DiscountPercent     object
+PaymentType         object
+dtype: object
+2025-11-04 15:19:32.273 | INFO     | __main__:read_raw_data:185 - Number of unique values: 
+TransactionID      2000
+SaleDate              2
+CustomerID          201
+ProductID           100
+StoreID               4
+CampaignID            4
+SaleAmount          915
+DiscountPercent      62
+PaymentType           3
+dtype: int64
+2025-11-04 15:19:32.273 | INFO     | __main__:main:218 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, DiscountPercent, PaymentType
+2025-11-04 15:19:32.274 | INFO     | __main__:main:219 - Initial dataframe shape: (2001, 9)
+2025-11-04 15:19:32.274 | INFO     | __main__:remove_duplicates:74 - FUNCTION START: remove_duplicates with dataframe shape=(2001, 9)
+2025-11-04 15:19:32.276 | INFO     | __main__:remove_duplicates:80 - Removed 1 duplicate rows; remaining 2000
+2025-11-04 15:19:32.276 | INFO     | __main__:handle_missing_values:88 - FUNCTION START: handle_missing_values with dataframe shape=(2000, 9)
+2025-11-04 15:19:32.279 | INFO     | __main__:handle_missing_values:97 - Dropped 0 rows missing TransactionID
+2025-11-04 15:19:32.283 | INFO     | __main__:handle_missing_values:104 - Found 1 invalid SaleDate values; dropping those rows
+2025-11-04 15:19:32.295 | INFO     | __main__:handle_missing_values:136 - Missing values handled
+2025-11-04 15:19:32.295 | INFO     | __main__:remove_outliers:144 - FUNCTION START: remove_outliers with dataframe shape=(1999, 9)
+2025-11-04 15:19:32.298 | INFO     | __main__:remove_outliers:156 - IQR filter on SaleAmount: kept within [-1642.8175, 3406.5225]
+2025-11-04 15:19:32.300 | INFO     | __main__:remove_outliers:156 - IQR filter on DiscountPercent: kept within [-15.5, 44.5]
+2025-11-04 15:19:32.302 | INFO     | __main__:remove_outliers:164 - Removed 66 outlier rows; remaining 1933
+2025-11-04 15:19:32.302 | INFO     | __main__:save_prepared_data:62 - FUNCTION START: save_prepared_data with file_name=sales_prepared.csv, dataframe shape=(1933, 9)
+2025-11-04 15:19:32.312 | INFO     | __main__:save_prepared_data:67 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\sales_prepared.csv
+2025-11-04 15:19:32.313 | INFO     | __main__:main:244 - ==================================
+2025-11-04 15:19:32.313 | INFO     | __main__:main:245 - Original shape: (2001, 9)
+2025-11-04 15:19:32.313 | INFO     | __main__:main:246 - Cleaned shape:  (1933, 9)
+2025-11-04 15:19:32.313 | INFO     | __main__:main:247 - ==================================
+2025-11-04 15:19:32.314 | INFO     | __main__:main:248 - FINISHED prepare_sales_data.py
+2025-11-04 15:19:32.314 | INFO     | __main__:main:249 - ==================================
+2025-11-04 23:13:40.358 | INFO     | __main__:main:198 - ==================================
+2025-11-04 23:13:40.358 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-04 23:13:40.358 | INFO     | __main__:main:200 - ==================================
+2025-11-04 23:13:40.358 | INFO     | __main__:main:202 - Root         : C:\Repos\smart-store-abdellah
+2025-11-04 23:13:40.358 | INFO     | __main__:main:203 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-04 23:13:40.358 | INFO     | __main__:main:204 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-04 23:13:40.358 | INFO     | __main__:main:205 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-04 23:13:40.358 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-04 23:13:40.373 | INFO     | __main__:main:217 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-11-04 23:13:40.373 | INFO     | __main__:main:218 - Initial dataframe shape: (205, 6)
+2025-11-04 23:13:40.373 | INFO     | __main__:remove_duplicates:100 - FUNCTION START: remove_duplicates with dataframe shape=(205, 6)
+2025-11-04 23:13:40.376 | INFO     | __main__:remove_duplicates:111 - Original dataframe shape: (205, 6)
+2025-11-04 23:13:40.376 | INFO     | __main__:remove_duplicates:112 - Deduped  dataframe shape: (201, 6)
+2025-11-04 23:13:40.377 | INFO     | __main__:handle_missing_values:127 - FUNCTION START: handle_missing_values with dataframe shape=(201, 6)
+2025-11-04 23:13:40.378 | INFO     | __main__:handle_missing_values:131 - Total missing values before handling: 54
+2025-11-04 23:13:40.382 | INFO     | __main__:handle_missing_values:148 - Total missing values after handling: 0
+2025-11-04 23:13:40.383 | INFO     | __main__:handle_missing_values:149 - 201 records remaining after handling missing values.
+2025-11-04 23:13:40.383 | INFO     | __main__:remove_outliers:164 - FUNCTION START: remove_outliers with dataframe shape=(201, 6)
+2025-11-04 23:13:40.388 | INFO     | __main__:remove_outliers:184 - Removed 0 outlier rows
+2025-11-04 23:13:40.389 | INFO     | __main__:remove_outliers:185 - 201 records remaining after removing outliers.
+2025-11-04 23:13:40.389 | INFO     | __main__:save_prepared_data:80 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(201, 6)
+2025-11-04 23:13:40.392 | INFO     | __main__:save_prepared_data:85 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\customers_prepared.csv
+2025-11-04 23:13:40.392 | INFO     | __main__:main:243 - ==================================
+2025-11-04 23:13:40.393 | INFO     | __main__:main:244 - Original shape: (205, 6)
+2025-11-04 23:13:40.393 | INFO     | __main__:main:245 - Cleaned shape:  (201, 6)
+2025-11-04 23:13:40.393 | INFO     | __main__:main:246 - ==================================
+2025-11-04 23:13:40.394 | INFO     | __main__:main:247 - FINISHED prepare_customers_data.py
+2025-11-04 23:13:40.394 | INFO     | __main__:main:248 - ==================================
+2025-11-04 23:15:31.521 | INFO     | __main__:main:301 - ==================================
+2025-11-04 23:15:31.522 | INFO     | __main__:main:302 - STARTING prepare_products_data.py
+2025-11-04 23:15:31.522 | INFO     | __main__:main:303 - ==================================
+2025-11-04 23:15:31.522 | INFO     | __main__:main:305 - Root         : C:\Repos\smart-store-abdellah
+2025-11-04 23:15:31.522 | INFO     | __main__:main:306 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-04 23:15:31.523 | INFO     | __main__:main:307 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-04 23:15:31.523 | INFO     | __main__:main:308 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-04 23:15:31.523 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-04 23:15:31.524 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-04 23:15:31.527 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-04 23:15:31.528 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-04 23:15:31.529 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-04 23:15:31.531 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-04 23:15:31.532 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-04 23:15:31.532 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-04 23:15:31.534 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-04 23:15:31.534 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-04 23:15:31.536 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-04 23:15:31.537 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-04 23:15:31.537 | INFO     | __main__:main:323 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, SupplierName
+2025-11-04 23:15:31.538 | INFO     | __main__:main:324 - Initial dataframe shape: (105, 6)
+2025-11-04 23:15:31.538 | INFO     | __main__:main:335 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, SupplierName -> suppliername
+2025-11-04 23:15:31.539 | INFO     | __main__:remove_duplicates:108 - FUNCTION START: remove_duplicates with dataframe shape=(105, 6)
+2025-11-04 23:15:31.542 | INFO     | __main__:remove_duplicates:116 - Removed 5 duplicate rows
+2025-11-04 23:15:31.542 | INFO     | __main__:remove_duplicates:117 - 100 records remaining after removing duplicates.
+2025-11-04 23:15:31.542 | INFO     | __main__:handle_missing_values:132 - FUNCTION START: handle_missing_values with dataframe shape=(100, 6)
+2025-11-04 23:15:31.543 | INFO     | __main__:handle_missing_values:137 - Missing values by column before handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-04 23:15:31.545 | INFO     | __main__:handle_missing_values:172 - Missing values by column after handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-04 23:15:31.545 | INFO     | __main__:handle_missing_values:173 - 100 records remaining after handling missing values.
+2025-11-04 23:15:31.546 | INFO     | __main__:remove_outliers:188 - FUNCTION START: remove_outliers with dataframe shape=(100, 6)
+2025-11-04 23:15:31.549 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to unitprice: bounds [-518.0887499999999, 1544.90125]
+2025-11-04 23:15:31.550 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to stockquantity: bounds [-35.625, 141.375]
+2025-11-04 23:15:31.551 | INFO     | __main__:remove_outliers:216 - Removed 0 outlier rows
+2025-11-04 23:15:31.551 | INFO     | __main__:remove_outliers:217 - 100 records remaining after removing outliers.
+2025-11-04 23:15:31.551 | INFO     | __main__:validate_data:270 - FUNCTION START: validate_data with dataframe shape=(100, 6)
+2025-11-04 23:15:31.554 | INFO     | __main__:validate_data:278 - Validated productid: removed 0 invalid/duplicate rows
+2025-11-04 23:15:31.554 | INFO     | __main__:validate_data:293 - Data validation complete
+2025-11-04 23:15:31.555 | INFO     | __main__:standardize_formats:231 - FUNCTION START: standardize_formats with dataframe shape=(100, 6)
+2025-11-04 23:15:31.558 | INFO     | __main__:standardize_formats:256 - Completed standardizing formats
+2025-11-04 23:15:31.558 | INFO     | __main__:save_prepared_data:90 - FUNCTION START: save_prepared_data with file_name=products_prepared.csv, dataframe shape=(100, 6)
+2025-11-04 23:15:31.561 | INFO     | __main__:save_prepared_data:95 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\products_prepared.csv
+2025-11-04 23:15:31.561 | INFO     | __main__:main:355 - ==================================
+2025-11-04 23:15:31.561 | INFO     | __main__:main:356 - Original shape: (105, 6)
+2025-11-04 23:15:31.561 | INFO     | __main__:main:357 - Cleaned shape:  (100, 6)
+2025-11-04 23:15:31.562 | INFO     | __main__:main:358 - ==================================
+2025-11-04 23:15:31.562 | INFO     | __main__:main:359 - FINISHED prepare_products_data.py
+2025-11-04 23:15:31.562 | INFO     | __main__:main:360 - ==================================
+2025-11-04 23:15:33.246 | INFO     | __main__:main:199 - ==================================
+2025-11-04 23:15:33.247 | INFO     | __main__:main:200 - STARTING prepare_sales_data.py
+2025-11-04 23:15:33.247 | INFO     | __main__:main:201 - ==================================
+2025-11-04 23:15:33.247 | INFO     | __main__:main:203 - Root         : C:\Repos\smart-store-abdellah
+2025-11-04 23:15:33.247 | INFO     | __main__:main:204 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-04 23:15:33.248 | INFO     | __main__:main:205 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-04 23:15:33.248 | INFO     | __main__:main:206 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-04 23:15:33.248 | INFO     | __main__:read_raw_data:178 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-04 23:15:33.248 | INFO     | __main__:read_raw_data:180 - Reading data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv
+2025-11-04 23:15:33.254 | INFO     | __main__:read_raw_data:182 - Loaded dataframe with 2001 rows and 9 columns
+2025-11-04 23:15:33.256 | INFO     | __main__:read_raw_data:184 - Column datatypes: 
+TransactionID        int64
+SaleDate            object
+CustomerID           int64
+ProductID            int64
+StoreID              int64
+CampaignID         float64
+SaleAmount          object
+DiscountPercent     object
+PaymentType         object
+dtype: object
+2025-11-04 23:15:33.258 | INFO     | __main__:read_raw_data:185 - Number of unique values: 
+TransactionID      2000
+SaleDate              2
+CustomerID          201
+ProductID           100
+StoreID               4
+CampaignID            4
+SaleAmount          915
+DiscountPercent      62
+PaymentType           3
+dtype: int64
+2025-11-04 23:15:33.259 | INFO     | __main__:main:218 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, DiscountPercent, PaymentType
+2025-11-04 23:15:33.259 | INFO     | __main__:main:219 - Initial dataframe shape: (2001, 9)
+2025-11-04 23:15:33.260 | INFO     | __main__:remove_duplicates:74 - FUNCTION START: remove_duplicates with dataframe shape=(2001, 9)
+2025-11-04 23:15:33.261 | INFO     | __main__:remove_duplicates:80 - Removed 1 duplicate rows; remaining 2000
+2025-11-04 23:15:33.261 | INFO     | __main__:handle_missing_values:88 - FUNCTION START: handle_missing_values with dataframe shape=(2000, 9)
+2025-11-04 23:15:33.264 | INFO     | __main__:handle_missing_values:97 - Dropped 0 rows missing TransactionID
+2025-11-04 23:15:33.269 | INFO     | __main__:handle_missing_values:104 - Found 1 invalid SaleDate values; dropping those rows
+2025-11-04 23:15:33.280 | INFO     | __main__:handle_missing_values:136 - Missing values handled
+2025-11-04 23:15:33.281 | INFO     | __main__:remove_outliers:144 - FUNCTION START: remove_outliers with dataframe shape=(1999, 9)
+2025-11-04 23:15:33.283 | INFO     | __main__:remove_outliers:156 - IQR filter on SaleAmount: kept within [-1642.8175, 3406.5225]
+2025-11-04 23:15:33.285 | INFO     | __main__:remove_outliers:156 - IQR filter on DiscountPercent: kept within [-15.5, 44.5]
+2025-11-04 23:15:33.286 | INFO     | __main__:remove_outliers:164 - Removed 66 outlier rows; remaining 1933
+2025-11-04 23:15:33.287 | INFO     | __main__:save_prepared_data:62 - FUNCTION START: save_prepared_data with file_name=sales_prepared.csv, dataframe shape=(1933, 9)
+2025-11-04 23:15:33.300 | INFO     | __main__:save_prepared_data:67 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\sales_prepared.csv
+2025-11-04 23:15:33.301 | INFO     | __main__:main:244 - ==================================
+2025-11-04 23:15:33.301 | INFO     | __main__:main:245 - Original shape: (2001, 9)
+2025-11-04 23:15:33.301 | INFO     | __main__:main:246 - Cleaned shape:  (1933, 9)
+2025-11-04 23:15:33.302 | INFO     | __main__:main:247 - ==================================
+2025-11-04 23:15:33.302 | INFO     | __main__:main:248 - FINISHED prepare_sales_data.py
+2025-11-04 23:15:33.302 | INFO     | __main__:main:249 - ==================================
+2025-11-05 11:33:49.312 | INFO     | __main__:main:198 - ==================================
+2025-11-05 11:33:49.313 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-05 11:33:49.313 | INFO     | __main__:main:200 - ==================================
+2025-11-05 11:33:49.313 | INFO     | __main__:main:202 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 11:33:49.313 | INFO     | __main__:main:203 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 11:33:49.313 | INFO     | __main__:main:204 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 11:33:49.313 | INFO     | __main__:main:205 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 11:33:49.313 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-05 11:33:49.313 | INFO     | __main__:main:217 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-11-05 11:33:49.313 | INFO     | __main__:main:218 - Initial dataframe shape: (205, 6)
+2025-11-05 11:33:49.313 | INFO     | __main__:remove_duplicates:100 - FUNCTION START: remove_duplicates with dataframe shape=(205, 6)
+2025-11-05 11:33:49.313 | INFO     | __main__:remove_duplicates:111 - Original dataframe shape: (205, 6)
+2025-11-05 11:33:49.313 | INFO     | __main__:remove_duplicates:112 - Deduped  dataframe shape: (201, 6)
+2025-11-05 11:33:49.313 | INFO     | __main__:handle_missing_values:127 - FUNCTION START: handle_missing_values with dataframe shape=(201, 6)
+2025-11-05 11:33:49.329 | INFO     | __main__:handle_missing_values:131 - Total missing values before handling: 54
+2025-11-05 11:33:49.336 | INFO     | __main__:handle_missing_values:148 - Total missing values after handling: 0
+2025-11-05 11:33:49.336 | INFO     | __main__:handle_missing_values:149 - 201 records remaining after handling missing values.
+2025-11-05 11:33:49.336 | INFO     | __main__:remove_outliers:164 - FUNCTION START: remove_outliers with dataframe shape=(201, 6)
+2025-11-05 11:33:49.340 | INFO     | __main__:remove_outliers:184 - Removed 0 outlier rows
+2025-11-05 11:33:49.341 | INFO     | __main__:remove_outliers:185 - 201 records remaining after removing outliers.
+2025-11-05 11:33:49.341 | INFO     | __main__:save_prepared_data:80 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(201, 6)
+2025-11-05 11:33:49.352 | INFO     | __main__:save_prepared_data:85 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\customers_prepared.csv
+2025-11-05 11:33:49.352 | INFO     | __main__:main:243 - ==================================
+2025-11-05 11:33:49.353 | INFO     | __main__:main:244 - Original shape: (205, 6)
+2025-11-05 11:33:49.353 | INFO     | __main__:main:245 - Cleaned shape:  (201, 6)
+2025-11-05 11:33:49.353 | INFO     | __main__:main:246 - ==================================
+2025-11-05 11:33:49.353 | INFO     | __main__:main:247 - FINISHED prepare_customers_data.py
+2025-11-05 11:33:49.353 | INFO     | __main__:main:248 - ==================================
+2025-11-05 11:34:02.071 | INFO     | __main__:main:301 - ==================================
+2025-11-05 11:34:02.071 | INFO     | __main__:main:302 - STARTING prepare_products_data.py
+2025-11-05 11:34:02.071 | INFO     | __main__:main:303 - ==================================
+2025-11-05 11:34:02.071 | INFO     | __main__:main:305 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 11:34:02.071 | INFO     | __main__:main:306 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 11:34:02.071 | INFO     | __main__:main:307 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 11:34:02.071 | INFO     | __main__:main:308 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 11:34:02.071 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-05 11:34:02.071 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-05 11:34:02.071 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-05 11:34:02.071 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-05 11:34:02.092 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-05 11:34:02.094 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-05 11:34:02.094 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-05 11:34:02.095 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-05 11:34:02.095 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-05 11:34:02.095 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-05 11:34:02.095 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-05 11:34:02.103 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-05 11:34:02.103 | INFO     | __main__:main:323 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, SupplierName
+2025-11-05 11:34:02.103 | INFO     | __main__:main:324 - Initial dataframe shape: (105, 6)
+2025-11-05 11:34:02.104 | INFO     | __main__:main:335 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, SupplierName -> suppliername
+2025-11-05 11:34:02.105 | INFO     | __main__:remove_duplicates:108 - FUNCTION START: remove_duplicates with dataframe shape=(105, 6)
+2025-11-05 11:34:02.108 | INFO     | __main__:remove_duplicates:116 - Removed 5 duplicate rows
+2025-11-05 11:34:02.108 | INFO     | __main__:remove_duplicates:117 - 100 records remaining after removing duplicates.
+2025-11-05 11:34:02.108 | INFO     | __main__:handle_missing_values:132 - FUNCTION START: handle_missing_values with dataframe shape=(100, 6)
+2025-11-05 11:34:02.110 | INFO     | __main__:handle_missing_values:137 - Missing values by column before handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-05 11:34:02.112 | INFO     | __main__:handle_missing_values:172 - Missing values by column after handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-05 11:34:02.112 | INFO     | __main__:handle_missing_values:173 - 100 records remaining after handling missing values.
+2025-11-05 11:34:02.112 | INFO     | __main__:remove_outliers:188 - FUNCTION START: remove_outliers with dataframe shape=(100, 6)
+2025-11-05 11:34:02.113 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to unitprice: bounds [-518.0887499999999, 1544.90125]
+2025-11-05 11:34:02.113 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to stockquantity: bounds [-35.625, 141.375]
+2025-11-05 11:34:02.120 | INFO     | __main__:remove_outliers:216 - Removed 0 outlier rows
+2025-11-05 11:34:02.121 | INFO     | __main__:remove_outliers:217 - 100 records remaining after removing outliers.
+2025-11-05 11:34:02.121 | INFO     | __main__:validate_data:270 - FUNCTION START: validate_data with dataframe shape=(100, 6)
+2025-11-05 11:34:02.123 | INFO     | __main__:validate_data:278 - Validated productid: removed 0 invalid/duplicate rows
+2025-11-05 11:34:02.124 | INFO     | __main__:validate_data:293 - Data validation complete
+2025-11-05 11:34:02.124 | INFO     | __main__:standardize_formats:231 - FUNCTION START: standardize_formats with dataframe shape=(100, 6)
+2025-11-05 11:34:02.128 | INFO     | __main__:standardize_formats:256 - Completed standardizing formats
+2025-11-05 11:34:02.128 | INFO     | __main__:save_prepared_data:90 - FUNCTION START: save_prepared_data with file_name=products_prepared.csv, dataframe shape=(100, 6)
+2025-11-05 11:34:02.129 | INFO     | __main__:save_prepared_data:95 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\products_prepared.csv
+2025-11-05 11:34:02.129 | INFO     | __main__:main:355 - ==================================
+2025-11-05 11:34:02.129 | INFO     | __main__:main:356 - Original shape: (105, 6)
+2025-11-05 11:34:02.129 | INFO     | __main__:main:357 - Cleaned shape:  (100, 6)
+2025-11-05 11:34:02.129 | INFO     | __main__:main:358 - ==================================
+2025-11-05 11:34:02.129 | INFO     | __main__:main:359 - FINISHED prepare_products_data.py
+2025-11-05 11:34:02.129 | INFO     | __main__:main:360 - ==================================
+2025-11-05 11:34:10.738 | INFO     | __main__:main:199 - ==================================
+2025-11-05 11:34:10.738 | INFO     | __main__:main:200 - STARTING prepare_sales_data.py
+2025-11-05 11:34:10.738 | INFO     | __main__:main:201 - ==================================
+2025-11-05 11:34:10.738 | INFO     | __main__:main:203 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 11:34:10.738 | INFO     | __main__:main:204 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 11:34:10.738 | INFO     | __main__:main:205 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 11:34:10.738 | INFO     | __main__:main:206 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 11:34:10.738 | INFO     | __main__:read_raw_data:178 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-05 11:34:10.738 | INFO     | __main__:read_raw_data:180 - Reading data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv
+2025-11-05 11:34:10.738 | INFO     | __main__:read_raw_data:182 - Loaded dataframe with 2001 rows and 9 columns
+2025-11-05 11:34:10.738 | INFO     | __main__:read_raw_data:184 - Column datatypes: 
+TransactionID        int64
+SaleDate            object
+CustomerID           int64
+ProductID            int64
+StoreID              int64
+CampaignID         float64
+SaleAmount          object
+DiscountPercent     object
+PaymentType         object
+dtype: object
+2025-11-05 11:34:10.754 | INFO     | __main__:read_raw_data:185 - Number of unique values: 
+TransactionID      2000
+SaleDate              2
+CustomerID          201
+ProductID           100
+StoreID               4
+CampaignID            4
+SaleAmount          915
+DiscountPercent      62
+PaymentType           3
+dtype: int64
+2025-11-05 11:34:10.755 | INFO     | __main__:main:218 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, DiscountPercent, PaymentType
+2025-11-05 11:34:10.755 | INFO     | __main__:main:219 - Initial dataframe shape: (2001, 9)
+2025-11-05 11:34:10.756 | INFO     | __main__:remove_duplicates:74 - FUNCTION START: remove_duplicates with dataframe shape=(2001, 9)
+2025-11-05 11:34:10.757 | INFO     | __main__:remove_duplicates:80 - Removed 1 duplicate rows; remaining 2000
+2025-11-05 11:34:10.757 | INFO     | __main__:handle_missing_values:88 - FUNCTION START: handle_missing_values with dataframe shape=(2000, 9)
+2025-11-05 11:34:10.761 | INFO     | __main__:handle_missing_values:97 - Dropped 0 rows missing TransactionID
+2025-11-05 11:34:10.771 | INFO     | __main__:handle_missing_values:104 - Found 1 invalid SaleDate values; dropping those rows
+2025-11-05 11:34:10.782 | INFO     | __main__:handle_missing_values:136 - Missing values handled
+2025-11-05 11:34:10.782 | INFO     | __main__:remove_outliers:144 - FUNCTION START: remove_outliers with dataframe shape=(1999, 9)
+2025-11-05 11:34:10.782 | INFO     | __main__:remove_outliers:156 - IQR filter on SaleAmount: kept within [-1642.8175, 3406.5225]
+2025-11-05 11:34:10.788 | INFO     | __main__:remove_outliers:156 - IQR filter on DiscountPercent: kept within [-15.5, 44.5]
+2025-11-05 11:34:10.789 | INFO     | __main__:remove_outliers:164 - Removed 66 outlier rows; remaining 1933
+2025-11-05 11:34:10.790 | INFO     | __main__:save_prepared_data:62 - FUNCTION START: save_prepared_data with file_name=sales_prepared.csv, dataframe shape=(1933, 9)
+2025-11-05 11:34:10.800 | INFO     | __main__:save_prepared_data:67 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\sales_prepared.csv
+2025-11-05 11:34:10.800 | INFO     | __main__:main:244 - ==================================
+2025-11-05 11:34:10.804 | INFO     | __main__:main:245 - Original shape: (2001, 9)
+2025-11-05 11:34:10.804 | INFO     | __main__:main:246 - Cleaned shape:  (1933, 9)
+2025-11-05 11:34:10.804 | INFO     | __main__:main:247 - ==================================
+2025-11-05 11:34:10.805 | INFO     | __main__:main:248 - FINISHED prepare_sales_data.py
+2025-11-05 11:34:10.805 | INFO     | __main__:main:249 - ==================================
+2025-11-05 14:00:57.864 | INFO     | __main__:main:198 - ==================================
+2025-11-05 14:00:57.865 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-05 14:00:57.865 | INFO     | __main__:main:200 - ==================================
+2025-11-05 14:00:57.865 | INFO     | __main__:main:202 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 14:00:57.866 | INFO     | __main__:main:203 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 14:00:57.866 | INFO     | __main__:main:204 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 14:00:57.866 | INFO     | __main__:main:205 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 14:00:57.866 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-05 14:00:57.870 | INFO     | __main__:main:217 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-11-05 14:00:57.870 | INFO     | __main__:main:218 - Initial dataframe shape: (205, 6)
+2025-11-05 14:00:57.871 | INFO     | __main__:remove_duplicates:100 - FUNCTION START: remove_duplicates with dataframe shape=(205, 6)
+2025-11-05 14:00:57.873 | INFO     | __main__:remove_duplicates:111 - Original dataframe shape: (205, 6)
+2025-11-05 14:00:57.874 | INFO     | __main__:remove_duplicates:112 - Deduped  dataframe shape: (201, 6)
+2025-11-05 14:00:57.874 | INFO     | __main__:handle_missing_values:127 - FUNCTION START: handle_missing_values with dataframe shape=(201, 6)
+2025-11-05 14:00:57.875 | INFO     | __main__:handle_missing_values:131 - Total missing values before handling: 54
+2025-11-05 14:00:57.880 | INFO     | __main__:handle_missing_values:148 - Total missing values after handling: 0
+2025-11-05 14:00:57.880 | INFO     | __main__:handle_missing_values:149 - 201 records remaining after handling missing values.
+2025-11-05 14:00:57.880 | INFO     | __main__:remove_outliers:164 - FUNCTION START: remove_outliers with dataframe shape=(201, 6)
+2025-11-05 14:00:57.884 | INFO     | __main__:remove_outliers:184 - Removed 0 outlier rows
+2025-11-05 14:00:57.885 | INFO     | __main__:remove_outliers:185 - 201 records remaining after removing outliers.
+2025-11-05 14:00:57.885 | INFO     | __main__:save_prepared_data:80 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(201, 6)
+2025-11-05 14:00:57.888 | INFO     | __main__:save_prepared_data:85 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\customers_prepared.csv
+2025-11-05 14:00:57.888 | INFO     | __main__:main:243 - ==================================
+2025-11-05 14:00:57.888 | INFO     | __main__:main:244 - Original shape: (205, 6)
+2025-11-05 14:00:57.888 | INFO     | __main__:main:245 - Cleaned shape:  (201, 6)
+2025-11-05 14:00:57.889 | INFO     | __main__:main:246 - ==================================
+2025-11-05 14:00:57.889 | INFO     | __main__:main:247 - FINISHED prepare_customers_data.py
+2025-11-05 14:00:57.889 | INFO     | __main__:main:248 - ==================================
+2025-11-05 14:00:58.794 | INFO     | __main__:main:301 - ==================================
+2025-11-05 14:00:58.795 | INFO     | __main__:main:302 - STARTING prepare_products_data.py
+2025-11-05 14:00:58.795 | INFO     | __main__:main:303 - ==================================
+2025-11-05 14:00:58.795 | INFO     | __main__:main:305 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 14:00:58.796 | INFO     | __main__:main:306 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 14:00:58.796 | INFO     | __main__:main:307 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 14:00:58.796 | INFO     | __main__:main:308 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 14:00:58.797 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-05 14:00:58.797 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-05 14:00:58.801 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-05 14:00:58.802 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-05 14:00:58.804 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-05 14:00:58.806 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-05 14:00:58.806 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-05 14:00:58.806 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-05 14:00:58.808 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-05 14:00:58.809 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-05 14:00:58.810 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-05 14:00:58.812 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-05 14:00:58.813 | INFO     | __main__:main:323 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, SupplierName
+2025-11-05 14:00:58.813 | INFO     | __main__:main:324 - Initial dataframe shape: (105, 6)
+2025-11-05 14:00:58.814 | INFO     | __main__:main:335 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, SupplierName -> suppliername
+2025-11-05 14:00:58.814 | INFO     | __main__:remove_duplicates:108 - FUNCTION START: remove_duplicates with dataframe shape=(105, 6)
+2025-11-05 14:00:58.816 | INFO     | __main__:remove_duplicates:116 - Removed 5 duplicate rows
+2025-11-05 14:00:58.816 | INFO     | __main__:remove_duplicates:117 - 100 records remaining after removing duplicates.
+2025-11-05 14:00:58.817 | INFO     | __main__:handle_missing_values:132 - FUNCTION START: handle_missing_values with dataframe shape=(100, 6)
+2025-11-05 14:00:58.818 | INFO     | __main__:handle_missing_values:137 - Missing values by column before handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-05 14:00:58.819 | INFO     | __main__:handle_missing_values:172 - Missing values by column after handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-05 14:00:58.820 | INFO     | __main__:handle_missing_values:173 - 100 records remaining after handling missing values.
+2025-11-05 14:00:58.820 | INFO     | __main__:remove_outliers:188 - FUNCTION START: remove_outliers with dataframe shape=(100, 6)
+2025-11-05 14:00:58.824 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to unitprice: bounds [-518.0887499999999, 1544.90125]
+2025-11-05 14:00:58.827 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to stockquantity: bounds [-35.625, 141.375]
+2025-11-05 14:00:58.828 | INFO     | __main__:remove_outliers:216 - Removed 0 outlier rows
+2025-11-05 14:00:58.828 | INFO     | __main__:remove_outliers:217 - 100 records remaining after removing outliers.
+2025-11-05 14:00:58.829 | INFO     | __main__:validate_data:270 - FUNCTION START: validate_data with dataframe shape=(100, 6)
+2025-11-05 14:00:58.831 | INFO     | __main__:validate_data:278 - Validated productid: removed 0 invalid/duplicate rows
+2025-11-05 14:00:58.832 | INFO     | __main__:validate_data:293 - Data validation complete
+2025-11-05 14:00:58.832 | INFO     | __main__:standardize_formats:231 - FUNCTION START: standardize_formats with dataframe shape=(100, 6)
+2025-11-05 14:00:58.835 | INFO     | __main__:standardize_formats:256 - Completed standardizing formats
+2025-11-05 14:00:58.836 | INFO     | __main__:save_prepared_data:90 - FUNCTION START: save_prepared_data with file_name=products_prepared.csv, dataframe shape=(100, 6)
+2025-11-05 14:00:58.839 | INFO     | __main__:save_prepared_data:95 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\products_prepared.csv
+2025-11-05 14:00:58.839 | INFO     | __main__:main:355 - ==================================
+2025-11-05 14:00:58.839 | INFO     | __main__:main:356 - Original shape: (105, 6)
+2025-11-05 14:00:58.840 | INFO     | __main__:main:357 - Cleaned shape:  (100, 6)
+2025-11-05 14:00:58.840 | INFO     | __main__:main:358 - ==================================
+2025-11-05 14:00:58.841 | INFO     | __main__:main:359 - FINISHED prepare_products_data.py
+2025-11-05 14:00:58.841 | INFO     | __main__:main:360 - ==================================
+2025-11-05 14:00:59.694 | INFO     | __main__:main:199 - ==================================
+2025-11-05 14:00:59.695 | INFO     | __main__:main:200 - STARTING prepare_sales_data.py
+2025-11-05 14:00:59.695 | INFO     | __main__:main:201 - ==================================
+2025-11-05 14:00:59.695 | INFO     | __main__:main:203 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 14:00:59.695 | INFO     | __main__:main:204 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 14:00:59.696 | INFO     | __main__:main:205 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 14:00:59.696 | INFO     | __main__:main:206 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 14:00:59.696 | INFO     | __main__:read_raw_data:178 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-05 14:00:59.696 | INFO     | __main__:read_raw_data:180 - Reading data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv
+2025-11-05 14:00:59.702 | INFO     | __main__:read_raw_data:182 - Loaded dataframe with 2001 rows and 9 columns
+2025-11-05 14:00:59.703 | INFO     | __main__:read_raw_data:184 - Column datatypes: 
+TransactionID        int64
+SaleDate            object
+CustomerID           int64
+ProductID            int64
+StoreID              int64
+CampaignID         float64
+SaleAmount          object
+DiscountPercent     object
+PaymentType         object
+dtype: object
+2025-11-05 14:00:59.706 | INFO     | __main__:read_raw_data:185 - Number of unique values: 
+TransactionID      2000
+SaleDate              2
+CustomerID          201
+ProductID           100
+StoreID               4
+CampaignID            4
+SaleAmount          915
+DiscountPercent      62
+PaymentType           3
+dtype: int64
+2025-11-05 14:00:59.706 | INFO     | __main__:main:218 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, DiscountPercent, PaymentType
+2025-11-05 14:00:59.706 | INFO     | __main__:main:219 - Initial dataframe shape: (2001, 9)
+2025-11-05 14:00:59.707 | INFO     | __main__:remove_duplicates:74 - FUNCTION START: remove_duplicates with dataframe shape=(2001, 9)
+2025-11-05 14:00:59.708 | INFO     | __main__:remove_duplicates:80 - Removed 1 duplicate rows; remaining 2000
+2025-11-05 14:00:59.708 | INFO     | __main__:handle_missing_values:88 - FUNCTION START: handle_missing_values with dataframe shape=(2000, 9)
+2025-11-05 14:00:59.711 | INFO     | __main__:handle_missing_values:97 - Dropped 0 rows missing TransactionID
+2025-11-05 14:00:59.714 | INFO     | __main__:handle_missing_values:104 - Found 1 invalid SaleDate values; dropping those rows
+2025-11-05 14:00:59.725 | INFO     | __main__:handle_missing_values:136 - Missing values handled
+2025-11-05 14:00:59.725 | INFO     | __main__:remove_outliers:144 - FUNCTION START: remove_outliers with dataframe shape=(1999, 9)
+2025-11-05 14:00:59.728 | INFO     | __main__:remove_outliers:156 - IQR filter on SaleAmount: kept within [-1642.8175, 3406.5225]
+2025-11-05 14:00:59.730 | INFO     | __main__:remove_outliers:156 - IQR filter on DiscountPercent: kept within [-15.5, 44.5]
+2025-11-05 14:00:59.732 | INFO     | __main__:remove_outliers:164 - Removed 66 outlier rows; remaining 1933
+2025-11-05 14:00:59.733 | INFO     | __main__:save_prepared_data:62 - FUNCTION START: save_prepared_data with file_name=sales_prepared.csv, dataframe shape=(1933, 9)
+2025-11-05 14:00:59.742 | INFO     | __main__:save_prepared_data:67 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\sales_prepared.csv
+2025-11-05 14:00:59.743 | INFO     | __main__:main:244 - ==================================
+2025-11-05 14:00:59.743 | INFO     | __main__:main:245 - Original shape: (2001, 9)
+2025-11-05 14:00:59.743 | INFO     | __main__:main:246 - Cleaned shape:  (1933, 9)
+2025-11-05 14:00:59.744 | INFO     | __main__:main:247 - ==================================
+2025-11-05 14:00:59.745 | INFO     | __main__:main:248 - FINISHED prepare_sales_data.py
+2025-11-05 14:00:59.745 | INFO     | __main__:main:249 - ==================================
+2025-11-05 14:40:06.703 | INFO     | __main__:main:198 - ==================================
+2025-11-05 14:40:06.703 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-05 14:40:06.703 | INFO     | __main__:main:200 - ==================================
+2025-11-05 14:40:06.704 | INFO     | __main__:main:202 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 14:40:06.704 | INFO     | __main__:main:203 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 14:40:06.704 | INFO     | __main__:main:204 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 14:40:06.704 | INFO     | __main__:main:205 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 14:40:06.705 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\smart-store-abdellah\data\raw\customers_data.csv.
+2025-11-05 14:40:06.709 | INFO     | __main__:main:217 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-11-05 14:40:06.709 | INFO     | __main__:main:218 - Initial dataframe shape: (205, 6)
+2025-11-05 14:40:06.710 | INFO     | __main__:remove_duplicates:100 - FUNCTION START: remove_duplicates with dataframe shape=(205, 6)
+2025-11-05 14:40:06.711 | INFO     | __main__:remove_duplicates:111 - Original dataframe shape: (205, 6)
+2025-11-05 14:40:06.712 | INFO     | __main__:remove_duplicates:112 - Deduped  dataframe shape: (201, 6)
+2025-11-05 14:40:06.712 | INFO     | __main__:handle_missing_values:127 - FUNCTION START: handle_missing_values with dataframe shape=(201, 6)
+2025-11-05 14:40:06.713 | INFO     | __main__:handle_missing_values:131 - Total missing values before handling: 54
+2025-11-05 14:40:06.718 | INFO     | __main__:handle_missing_values:148 - Total missing values after handling: 0
+2025-11-05 14:40:06.718 | INFO     | __main__:handle_missing_values:149 - 201 records remaining after handling missing values.
+2025-11-05 14:40:06.719 | INFO     | __main__:remove_outliers:164 - FUNCTION START: remove_outliers with dataframe shape=(201, 6)
+2025-11-05 14:40:06.722 | INFO     | __main__:remove_outliers:184 - Removed 0 outlier rows
+2025-11-05 14:40:06.722 | INFO     | __main__:remove_outliers:185 - 201 records remaining after removing outliers.
+2025-11-05 14:40:06.723 | INFO     | __main__:save_prepared_data:80 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(201, 6)
+2025-11-05 14:40:06.725 | INFO     | __main__:save_prepared_data:85 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\customers_prepared.csv
+2025-11-05 14:40:06.725 | INFO     | __main__:main:243 - ==================================
+2025-11-05 14:40:06.726 | INFO     | __main__:main:244 - Original shape: (205, 6)
+2025-11-05 14:40:06.726 | INFO     | __main__:main:245 - Cleaned shape:  (201, 6)
+2025-11-05 14:40:06.726 | INFO     | __main__:main:246 - ==================================
+2025-11-05 14:40:06.726 | INFO     | __main__:main:247 - FINISHED prepare_customers_data.py
+2025-11-05 14:40:06.727 | INFO     | __main__:main:248 - ==================================
+2025-11-05 14:40:08.991 | INFO     | __main__:main:301 - ==================================
+2025-11-05 14:40:08.991 | INFO     | __main__:main:302 - STARTING prepare_products_data.py
+2025-11-05 14:40:08.991 | INFO     | __main__:main:303 - ==================================
+2025-11-05 14:40:08.991 | INFO     | __main__:main:305 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 14:40:08.991 | INFO     | __main__:main:306 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 14:40:08.991 | INFO     | __main__:main:307 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 14:40:08.991 | INFO     | __main__:main:308 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 14:40:08.991 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-05 14:40:08.991 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-05 14:40:09.005 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-05 14:40:09.006 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-05 14:40:09.008 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-05 14:40:09.010 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-05 14:40:09.010 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-05 14:40:09.010 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\smart-store-abdellah\data\raw\products_data.csv
+2025-11-05 14:40:09.013 | INFO     | __main__:read_raw_data:72 - Loaded dataframe with 105 rows and 6 columns
+2025-11-05 14:40:09.014 | INFO     | __main__:read_raw_data:75 - Column dtypes:
+ProductID          int64
+ProductName       object
+Category          object
+UnitPrice        float64
+StockQuantity      int64
+SupplierName      object
+dtype: object
+2025-11-05 14:40:09.014 | INFO     | __main__:read_raw_data:76 - Unique values per column:
+ProductID        100
+ProductName       98
+Category           4
+UnitPrice        100
+StockQuantity     67
+SupplierName       4
+dtype: int64
+2025-11-05 14:40:09.014 | INFO     | __main__:read_raw_data:78 - Missing values (%):
+ProductID        0.00
+ProductName      0.00
+Category         0.00
+UnitPrice        0.00
+StockQuantity    0.00
+SupplierName     9.52
+dtype: float64
+2025-11-05 14:40:09.014 | INFO     | __main__:main:323 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, SupplierName
+2025-11-05 14:40:09.018 | INFO     | __main__:main:324 - Initial dataframe shape: (105, 6)
+2025-11-05 14:40:09.019 | INFO     | __main__:main:335 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, SupplierName -> suppliername
+2025-11-05 14:40:09.019 | INFO     | __main__:remove_duplicates:108 - FUNCTION START: remove_duplicates with dataframe shape=(105, 6)
+2025-11-05 14:40:09.023 | INFO     | __main__:remove_duplicates:116 - Removed 5 duplicate rows
+2025-11-05 14:40:09.023 | INFO     | __main__:remove_duplicates:117 - 100 records remaining after removing duplicates.
+2025-11-05 14:40:09.023 | INFO     | __main__:handle_missing_values:132 - FUNCTION START: handle_missing_values with dataframe shape=(100, 6)
+2025-11-05 14:40:09.024 | INFO     | __main__:handle_missing_values:137 - Missing values by column before handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-05 14:40:09.025 | INFO     | __main__:handle_missing_values:172 - Missing values by column after handling:
+productid         0
+productname       0
+category          0
+unitprice         0
+stockquantity     0
+suppliername     10
+dtype: int64
+2025-11-05 14:40:09.027 | INFO     | __main__:handle_missing_values:173 - 100 records remaining after handling missing values.
+2025-11-05 14:40:09.027 | INFO     | __main__:remove_outliers:188 - FUNCTION START: remove_outliers with dataframe shape=(100, 6)
+2025-11-05 14:40:09.029 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to unitprice: bounds [-518.0887499999999, 1544.90125]
+2025-11-05 14:40:09.030 | INFO     | __main__:remove_outliers:207 - Applied IQR outlier removal to stockquantity: bounds [-35.625, 141.375]
+2025-11-05 14:40:09.030 | INFO     | __main__:remove_outliers:216 - Removed 0 outlier rows
+2025-11-05 14:40:09.030 | INFO     | __main__:remove_outliers:217 - 100 records remaining after removing outliers.
+2025-11-05 14:40:09.030 | INFO     | __main__:validate_data:270 - FUNCTION START: validate_data with dataframe shape=(100, 6)
+2025-11-05 14:40:09.030 | INFO     | __main__:validate_data:278 - Validated productid: removed 0 invalid/duplicate rows
+2025-11-05 14:40:09.035 | INFO     | __main__:validate_data:293 - Data validation complete
+2025-11-05 14:40:09.035 | INFO     | __main__:standardize_formats:231 - FUNCTION START: standardize_formats with dataframe shape=(100, 6)
+2025-11-05 14:40:09.040 | INFO     | __main__:standardize_formats:256 - Completed standardizing formats
+2025-11-05 14:40:09.040 | INFO     | __main__:save_prepared_data:90 - FUNCTION START: save_prepared_data with file_name=products_prepared.csv, dataframe shape=(100, 6)
+2025-11-05 14:40:09.043 | INFO     | __main__:save_prepared_data:95 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\products_prepared.csv
+2025-11-05 14:40:09.043 | INFO     | __main__:main:355 - ==================================
+2025-11-05 14:40:09.043 | INFO     | __main__:main:356 - Original shape: (105, 6)
+2025-11-05 14:40:09.043 | INFO     | __main__:main:357 - Cleaned shape:  (100, 6)
+2025-11-05 14:40:09.043 | INFO     | __main__:main:358 - ==================================
+2025-11-05 14:40:09.043 | INFO     | __main__:main:359 - FINISHED prepare_products_data.py
+2025-11-05 14:40:09.045 | INFO     | __main__:main:360 - ==================================
+2025-11-05 14:40:10.852 | INFO     | __main__:main:199 - ==================================
+2025-11-05 14:40:10.852 | INFO     | __main__:main:200 - STARTING prepare_sales_data.py
+2025-11-05 14:40:10.852 | INFO     | __main__:main:201 - ==================================
+2025-11-05 14:40:10.852 | INFO     | __main__:main:203 - Root         : C:\Repos\smart-store-abdellah
+2025-11-05 14:40:10.852 | INFO     | __main__:main:204 - data/raw     : C:\Repos\smart-store-abdellah\data\raw
+2025-11-05 14:40:10.852 | INFO     | __main__:main:205 - data/prepared: C:\Repos\smart-store-abdellah\data\prepared
+2025-11-05 14:40:10.852 | INFO     | __main__:main:206 - scripts      : C:\Repos\smart-store-abdellah\src\analytics_project
+2025-11-05 14:40:10.852 | INFO     | __main__:read_raw_data:178 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-05 14:40:10.867 | INFO     | __main__:read_raw_data:180 - Reading data from C:\Repos\smart-store-abdellah\data\raw\sales_data.csv
+2025-11-05 14:40:10.874 | INFO     | __main__:read_raw_data:182 - Loaded dataframe with 2001 rows and 9 columns
+2025-11-05 14:40:10.875 | INFO     | __main__:read_raw_data:184 - Column datatypes: 
+TransactionID        int64
+SaleDate            object
+CustomerID           int64
+ProductID            int64
+StoreID              int64
+CampaignID         float64
+SaleAmount          object
+DiscountPercent     object
+PaymentType         object
+dtype: object
+2025-11-05 14:40:10.877 | INFO     | __main__:read_raw_data:185 - Number of unique values: 
+TransactionID      2000
+SaleDate              2
+CustomerID          201
+ProductID           100
+StoreID               4
+CampaignID            4
+SaleAmount          915
+DiscountPercent      62
+PaymentType           3
+dtype: int64
+2025-11-05 14:40:10.877 | INFO     | __main__:main:218 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, DiscountPercent, PaymentType
+2025-11-05 14:40:10.877 | INFO     | __main__:main:219 - Initial dataframe shape: (2001, 9)
+2025-11-05 14:40:10.878 | INFO     | __main__:remove_duplicates:74 - FUNCTION START: remove_duplicates with dataframe shape=(2001, 9)
+2025-11-05 14:40:10.879 | INFO     | __main__:remove_duplicates:80 - Removed 1 duplicate rows; remaining 2000
+2025-11-05 14:40:10.879 | INFO     | __main__:handle_missing_values:88 - FUNCTION START: handle_missing_values with dataframe shape=(2000, 9)
+2025-11-05 14:40:10.882 | INFO     | __main__:handle_missing_values:97 - Dropped 0 rows missing TransactionID
+2025-11-05 14:40:10.885 | INFO     | __main__:handle_missing_values:104 - Found 1 invalid SaleDate values; dropping those rows
+2025-11-05 14:40:10.897 | INFO     | __main__:handle_missing_values:136 - Missing values handled
+2025-11-05 14:40:10.897 | INFO     | __main__:remove_outliers:144 - FUNCTION START: remove_outliers with dataframe shape=(1999, 9)
+2025-11-05 14:40:10.899 | INFO     | __main__:remove_outliers:156 - IQR filter on SaleAmount: kept within [-1642.8175, 3406.5225]
+2025-11-05 14:40:10.900 | INFO     | __main__:remove_outliers:156 - IQR filter on DiscountPercent: kept within [-15.5, 44.5]
+2025-11-05 14:40:10.902 | INFO     | __main__:remove_outliers:164 - Removed 66 outlier rows; remaining 1933
+2025-11-05 14:40:10.903 | INFO     | __main__:save_prepared_data:62 - FUNCTION START: save_prepared_data with file_name=sales_prepared.csv, dataframe shape=(1933, 9)
+2025-11-05 14:40:10.915 | INFO     | __main__:save_prepared_data:67 - Data saved to C:\Repos\smart-store-abdellah\data\prepared\sales_prepared.csv
+2025-11-05 14:40:10.915 | INFO     | __main__:main:244 - ==================================
+2025-11-05 14:40:10.915 | INFO     | __main__:main:245 - Original shape: (2001, 9)
+2025-11-05 14:40:10.915 | INFO     | __main__:main:246 - Cleaned shape:  (1933, 9)
+2025-11-05 14:40:10.915 | INFO     | __main__:main:247 - ==================================
+2025-11-05 14:40:10.915 | INFO     | __main__:main:248 - FINISHED prepare_sales_data.py
+2025-11-05 14:40:10.915 | INFO     | __main__:main:249 - ==================================
+2025-11-27 14:20:44.981 | INFO     | __main__:main:198 - ==================================
+2025-11-27 14:20:44.981 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-27 14:20:44.981 | INFO     | __main__:main:200 - ==================================
+2025-11-27 14:20:44.981 | INFO     | __main__:main:202 - Root         : C:\Repos\walmart-sales-insights
+2025-11-27 14:20:44.981 | INFO     | __main__:main:203 - data/raw     : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 14:20:44.981 | INFO     | __main__:main:204 - data/prepared: C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 14:20:44.981 | INFO     | __main__:main:205 - scripts      : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 14:20:44.981 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\walmart-sales-insights\data\raw\customers_data.csv.
+2025-11-27 14:20:44.981 | ERROR    | __main__:read_raw_data:65 - File not found: C:\Repos\walmart-sales-insights\data\raw\customers_data.csv
+2025-11-27 14:20:45.009 | INFO     | __main__:main:217 - Initial dataframe columns: 
+2025-11-27 14:20:45.076 | INFO     | __main__:main:218 - Initial dataframe shape: (0, 0)
+2025-11-27 14:20:47.824 | INFO     | __main__:main:301 - ==================================
+2025-11-27 14:20:47.824 | INFO     | __main__:main:302 - STARTING prepare_products_data.py
+2025-11-27 14:20:47.824 | INFO     | __main__:main:303 - ==================================
+2025-11-27 14:20:47.824 | INFO     | __main__:main:305 - Root         : C:\Repos\walmart-sales-insights
+2025-11-27 14:20:47.824 | INFO     | __main__:main:306 - data/raw     : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 14:20:47.824 | INFO     | __main__:main:307 - data/prepared: C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 14:20:47.824 | INFO     | __main__:main:308 - scripts      : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 14:20:47.824 | INFO     | __main__:read_raw_data:68 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-11-27 14:20:47.824 | INFO     | __main__:read_raw_data:70 - Reading data from C:\Repos\walmart-sales-insights\data\raw\products_data.csv
+2025-11-27 14:20:49.548 | INFO     | __main__:main:199 - ==================================
+2025-11-27 14:20:49.548 | INFO     | __main__:main:200 - STARTING prepare_sales_data.py
+2025-11-27 14:20:49.548 | INFO     | __main__:main:201 - ==================================
+2025-11-27 14:20:49.548 | INFO     | __main__:main:203 - Root         : C:\Repos\walmart-sales-insights
+2025-11-27 14:20:49.548 | INFO     | __main__:main:204 - data/raw     : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 14:20:49.548 | INFO     | __main__:main:205 - data/prepared: C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 14:20:49.548 | INFO     | __main__:main:206 - scripts      : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 14:20:49.548 | INFO     | __main__:read_raw_data:178 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-11-27 14:20:49.548 | INFO     | __main__:read_raw_data:180 - Reading data from C:\Repos\walmart-sales-insights\data\raw\sales_data.csv
+2025-11-27 14:22:17.433 | INFO     | __main__:main:198 - ==================================
+2025-11-27 14:22:17.433 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-27 14:22:17.433 | INFO     | __main__:main:200 - ==================================
+2025-11-27 14:22:17.433 | INFO     | __main__:main:202 - Root         : C:\Repos\walmart-sales-insights
+2025-11-27 14:22:17.433 | INFO     | __main__:main:203 - data/raw     : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 14:22:17.433 | INFO     | __main__:main:204 - data/prepared: C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 14:22:17.433 | INFO     | __main__:main:205 - scripts      : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 14:22:17.433 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\walmart-sales-insights\data\raw\features.csv.
+2025-11-27 14:22:17.453 | INFO     | __main__:main:217 - Initial dataframe columns: Store, Date, Temperature, Fuel_Price, MarkDown1, MarkDown2, MarkDown3, MarkDown4, MarkDown5, CPI, Unemployment, IsHoliday
+2025-11-27 14:22:17.454 | INFO     | __main__:main:218 - Initial dataframe shape: (8190, 12)
+2025-11-27 14:22:17.454 | INFO     | __main__:remove_duplicates:100 - FUNCTION START: remove_duplicates with dataframe shape=(8190, 12)
+2025-11-27 14:22:17.461 | INFO     | __main__:remove_duplicates:111 - Original dataframe shape: (8190, 12)
+2025-11-27 14:22:17.461 | INFO     | __main__:remove_duplicates:112 - Deduped  dataframe shape: (8190, 12)
+2025-11-27 14:22:17.461 | INFO     | __main__:handle_missing_values:127 - FUNCTION START: handle_missing_values with dataframe shape=(8190, 12)
+2025-11-27 14:22:17.462 | INFO     | __main__:handle_missing_values:131 - Total missing values before handling: 24040
+2025-11-27 14:23:53.848 | INFO     | __main__:main:198 - ==================================
+2025-11-27 14:23:53.848 | INFO     | __main__:main:199 - STARTING prepare_customers_data.py
+2025-11-27 14:23:53.849 | INFO     | __main__:main:200 - ==================================
+2025-11-27 14:23:53.849 | INFO     | __main__:main:202 - Root         : C:\Repos\walmart-sales-insights
+2025-11-27 14:23:53.850 | INFO     | __main__:main:203 - data/raw     : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 14:23:53.850 | INFO     | __main__:main:204 - data/prepared: C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 14:23:53.850 | INFO     | __main__:main:205 - scripts      : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 14:23:53.851 | INFO     | __main__:read_raw_data:62 - READING: C:\Repos\walmart-sales-insights\data\raw\features.csv.
+2025-11-27 14:23:53.868 | INFO     | __main__:main:217 - Initial dataframe columns: Store, Date, Temperature, Fuel_Price, MarkDown1, MarkDown2, MarkDown3, MarkDown4, MarkDown5, CPI, Unemployment, IsHoliday
+2025-11-27 14:23:53.869 | INFO     | __main__:main:218 - Initial dataframe shape: (8190, 12)
+2025-11-27 14:23:53.869 | INFO     | __main__:remove_duplicates:100 - FUNCTION START: remove_duplicates with dataframe shape=(8190, 12)
+2025-11-27 14:23:53.878 | INFO     | __main__:remove_duplicates:111 - Original dataframe shape: (8190, 12)
+2025-11-27 14:23:53.878 | INFO     | __main__:remove_duplicates:112 - Deduped  dataframe shape: (8190, 12)
+2025-11-27 14:23:53.880 | INFO     | __main__:handle_missing_values:127 - FUNCTION START: handle_missing_values with dataframe shape=(8190, 12)
+2025-11-27 14:23:53.883 | INFO     | __main__:handle_missing_values:131 - Total missing values before handling: 24040
+2025-11-27 15:08:00.745 | INFO     | __main__:main:295 - ============================================
+2025-11-27 15:08:00.761 | INFO     | __main__:main:296 - STARTING prepare_walmart_sales.py
+2025-11-27 15:08:00.761 | INFO     | __main__:main:297 - ============================================
+2025-11-27 15:08:00.761 | INFO     | __main__:main:299 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:08:00.761 | INFO     | __main__:main:300 - src               : C:\Repos\walmart-sales-insights\src
+2025-11-27 15:11:29.495 | INFO     | __main__:main:296 - ============================================
+2025-11-27 15:11:29.495 | INFO     | __main__:main:297 - STARTING prepare_walmart_sales.py
+2025-11-27 15:11:29.495 | INFO     | __main__:main:298 - ============================================
+2025-11-27 15:11:29.495 | INFO     | __main__:main:300 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:11:29.495 | INFO     | __main__:main:301 - src               : C:\Repos\walmart-sales-insights\src
+2025-11-27 15:11:29.495 | INFO     | __main__:main:302 - analytics_project : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 15:11:29.495 | INFO     | __main__:main:303 - data/raw          : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 15:11:29.495 | INFO     | __main__:main:304 - data/prepared     : C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 15:11:29.495 | INFO     | __main__:read_raw_data:83 - READING: C:\Repos\walmart-sales-insights\data\raw\train.csv
+2025-11-27 15:11:29.667 | INFO     | __main__:read_raw_data:85 - Loaded dataframe with shape: (421570, 5)
+2025-11-27 15:11:29.667 | INFO     | __main__:main:311 - Initial dataframe shape: (421570, 5)
+2025-11-27 15:11:29.667 | INFO     | __main__:main:312 - Initial dataframe columns: Store, Dept, Date, Weekly_Sales, IsHoliday
+2025-11-27 15:11:29.667 | INFO     | __main__:convert_dtypes:144 - FUNCTION START: convert_dtypes
+2025-11-27 15:11:29.713 | INFO     | __main__:convert_dtypes:149 - Converted Date to datetime.
+2025-11-27 15:11:29.715 | INFO     | __main__:convert_dtypes:155 - Converted Store to Int64.
+2025-11-27 15:11:29.715 | INFO     | __main__:convert_dtypes:155 - Converted Dept to Int64.
+2025-11-27 15:11:29.720 | INFO     | __main__:convert_dtypes:160 - Converted Weekly_Sales to numeric (float).
+2025-11-27 15:11:29.930 | INFO     | __main__:convert_dtypes:168 - Standardized IsHoliday to boolean-like values.
+2025-11-27 15:11:29.930 | INFO     | __main__:remove_duplicates:181 - FUNCTION START: remove_duplicates with dataframe shape=(421570, 5)
+2025-11-27 15:11:29.997 | INFO     | __main__:remove_duplicates:186 - Original dataframe shape: (421570, 5)
+2025-11-27 15:11:29.997 | INFO     | __main__:remove_duplicates:187 - Deduped  dataframe shape: (421570, 5)
+2025-11-27 15:11:29.997 | INFO     | __main__:handle_missing_values:201 - FUNCTION START: handle_missing_values with dataframe shape=(421570, 5)
+2025-11-27 15:11:29.997 | INFO     | __main__:handle_missing_values:204 - Total missing values before handling: 0
+2025-11-27 15:11:30.030 | INFO     | __main__:handle_missing_values:216 - Total missing values after handling: 0
+2025-11-27 15:11:30.030 | INFO     | __main__:handle_missing_values:217 - 421570 records remaining after handling missing values.
+2025-11-27 15:11:30.031 | INFO     | __main__:remove_outliers:231 - FUNCTION START: remove_outliers with dataframe shape=(421570, 5)
+2025-11-27 15:11:30.053 | INFO     | __main__:remove_outliers:249 - Removed 12830 outlier rows based on Weekly_Sales.
+2025-11-27 15:11:30.054 | INFO     | __main__:remove_outliers:250 - 408740 records remaining after removing outliers.
+2025-11-27 15:11:30.056 | INFO     | __main__:add_time_features:264 - FUNCTION START: add_time_features
+2025-11-27 15:11:30.114 | INFO     | __main__:add_time_features:274 - Added Year, Month, and WeekOfYear features.
+2025-11-27 15:11:30.130 | INFO     | __main__:save_prepared_data:103 - FUNCTION START: save_prepared_data with file_name=train_prepared.csv, dataframe shape=(408740, 8)
+2025-11-27 15:11:31.464 | INFO     | __main__:save_prepared_data:108 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\train_prepared.csv
+2025-11-27 15:11:31.464 | INFO     | __main__:main:328 - ============================================
+2025-11-27 15:11:31.464 | INFO     | __main__:main:329 - Original shape: (421570, 5)
+2025-11-27 15:11:31.464 | INFO     | __main__:main:330 - Cleaned shape:  (408740, 8)
+2025-11-27 15:11:31.464 | INFO     | __main__:main:331 - FINISHED prepare_walmart_sales.py
+2025-11-27 15:11:31.464 | INFO     | __main__:main:332 - ============================================
+2025-11-27 15:13:59.832 | INFO     | __main__:main:166 - ========================================
+2025-11-27 15:13:59.833 | INFO     | __main__:main:167 - STARTING prepare_train_data.py
+2025-11-27 15:13:59.833 | INFO     | __main__:main:168 - ========================================
+2025-11-27 15:13:59.833 | INFO     | __main__:read_raw_data:63 - READING: C:\Repos\walmart-sales-insights\data\raw\train.csv
+2025-11-27 15:13:59.995 | INFO     | __main__:read_raw_data:65 - Loaded dataframe shape: (421570, 5)
+2025-11-27 15:14:01.777 | INFO     | __main__:save_prepared_data:79 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\train_prepared.csv
+2025-11-27 15:14:01.777 | INFO     | __main__:main:197 - Final cleaned dataframe shape: (408740, 8)
+2025-11-27 15:14:01.777 | INFO     | __main__:main:198 - FINISHED prepare_train_data.py
+2025-11-27 15:14:01.777 | INFO     | __main__:main:199 - ========================================
+2025-11-27 15:29:05.640 | INFO     | __main__:main:295 - ============================================
+2025-11-27 15:29:05.640 | INFO     | __main__:main:296 - STARTING prepare_walmart_sales.py
+2025-11-27 15:29:05.640 | INFO     | __main__:main:297 - ============================================
+2025-11-27 15:29:05.641 | INFO     | __main__:main:299 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:29:05.641 | INFO     | __main__:main:300 - src               : C:\Repos\walmart-sales-insights\src
+2025-11-27 15:29:53.847 | INFO     | __main__:main:296 - ============================================
+2025-11-27 15:29:53.847 | INFO     | __main__:main:297 - STARTING prepare_walmart_sales.py
+2025-11-27 15:29:53.848 | INFO     | __main__:main:298 - ============================================
+2025-11-27 15:29:53.848 | INFO     | __main__:main:300 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:29:53.848 | INFO     | __main__:main:301 - src               : C:\Repos\walmart-sales-insights\src
+2025-11-27 15:29:53.848 | INFO     | __main__:main:302 - analytics_project : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 15:29:53.849 | INFO     | __main__:main:303 - data/raw          : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 15:29:53.849 | INFO     | __main__:main:304 - data/prepared     : C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 15:29:53.849 | INFO     | __main__:read_raw_data:83 - READING: C:\Repos\walmart-sales-insights\data\raw\train.csv
+2025-11-27 15:29:54.004 | INFO     | __main__:read_raw_data:85 - Loaded dataframe with shape: (421570, 5)
+2025-11-27 15:29:54.004 | INFO     | __main__:main:311 - Initial dataframe shape: (421570, 5)
+2025-11-27 15:29:54.005 | INFO     | __main__:main:312 - Initial dataframe columns: Store, Dept, Date, Weekly_Sales, IsHoliday
+2025-11-27 15:29:54.006 | INFO     | __main__:convert_dtypes:144 - FUNCTION START: convert_dtypes
+2025-11-27 15:29:54.064 | INFO     | __main__:convert_dtypes:149 - Converted Date to datetime.
+2025-11-27 15:29:54.069 | INFO     | __main__:convert_dtypes:155 - Converted Store to Int64.
+2025-11-27 15:29:54.073 | INFO     | __main__:convert_dtypes:155 - Converted Dept to Int64.
+2025-11-27 15:29:54.074 | INFO     | __main__:convert_dtypes:160 - Converted Weekly_Sales to numeric (float).
+2025-11-27 15:29:54.360 | INFO     | __main__:convert_dtypes:168 - Standardized IsHoliday to boolean-like values.
+2025-11-27 15:29:54.361 | INFO     | __main__:remove_duplicates:181 - FUNCTION START: remove_duplicates with dataframe shape=(421570, 5)
+2025-11-27 15:29:54.453 | INFO     | __main__:remove_duplicates:186 - Original dataframe shape: (421570, 5)
+2025-11-27 15:29:54.454 | INFO     | __main__:remove_duplicates:187 - Deduped  dataframe shape: (421570, 5)
+2025-11-27 15:29:54.455 | INFO     | __main__:handle_missing_values:201 - FUNCTION START: handle_missing_values with dataframe shape=(421570, 5)
+2025-11-27 15:29:54.460 | INFO     | __main__:handle_missing_values:204 - Total missing values before handling: 0
+2025-11-27 15:29:54.485 | INFO     | __main__:handle_missing_values:216 - Total missing values after handling: 0
+2025-11-27 15:29:54.485 | INFO     | __main__:handle_missing_values:217 - 421570 records remaining after handling missing values.
+2025-11-27 15:29:54.487 | INFO     | __main__:remove_outliers:231 - FUNCTION START: remove_outliers with dataframe shape=(421570, 5)
+2025-11-27 15:29:54.518 | INFO     | __main__:remove_outliers:249 - Removed 12830 outlier rows based on Weekly_Sales.
+2025-11-27 15:29:54.519 | INFO     | __main__:remove_outliers:250 - 408740 records remaining after removing outliers.
+2025-11-27 15:29:54.520 | INFO     | __main__:add_time_features:264 - FUNCTION START: add_time_features
+2025-11-27 15:29:54.613 | INFO     | __main__:add_time_features:274 - Added Year, Month, and WeekOfYear features.
+2025-11-27 15:29:54.613 | INFO     | __main__:save_prepared_data:103 - FUNCTION START: save_prepared_data with file_name=train_prepared.csv, dataframe shape=(408740, 8)
+2025-11-27 15:29:56.603 | INFO     | __main__:save_prepared_data:108 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\train_prepared.csv
+2025-11-27 15:29:56.603 | INFO     | __main__:main:328 - ============================================
+2025-11-27 15:29:56.604 | INFO     | __main__:main:329 - Original shape: (421570, 5)
+2025-11-27 15:29:56.604 | INFO     | __main__:main:330 - Cleaned shape:  (408740, 8)
+2025-11-27 15:29:56.604 | INFO     | __main__:main:331 - FINISHED prepare_walmart_sales.py
+2025-11-27 15:29:56.604 | INFO     | __main__:main:332 - ============================================
+2025-11-27 15:31:06.617 | INFO     | __main__:main:296 - ============================================
+2025-11-27 15:31:06.617 | INFO     | __main__:main:297 - STARTING prepare_walmart_sales.py
+2025-11-27 15:31:06.617 | INFO     | __main__:main:298 - ============================================
+2025-11-27 15:31:06.618 | INFO     | __main__:main:300 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:31:06.618 | INFO     | __main__:main:301 - src               : C:\Repos\walmart-sales-insights\src
+2025-11-27 15:31:06.618 | INFO     | __main__:main:302 - analytics_project : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 15:31:06.618 | INFO     | __main__:main:303 - data/raw          : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 15:31:06.619 | INFO     | __main__:main:304 - data/prepared     : C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 15:31:06.619 | INFO     | __main__:read_raw_data:83 - READING: C:\Repos\walmart-sales-insights\data\raw\features.csv
+2025-11-27 15:31:06.631 | INFO     | __main__:read_raw_data:85 - Loaded dataframe with shape: (8190, 12)
+2025-11-27 15:31:06.632 | INFO     | __main__:main:311 - Initial dataframe shape: (8190, 12)
+2025-11-27 15:31:06.632 | INFO     | __main__:main:312 - Initial dataframe columns: Store, Date, Temperature, Fuel_Price, MarkDown1, MarkDown2, MarkDown3, MarkDown4, MarkDown5, CPI, Unemployment, IsHoliday
+2025-11-27 15:31:06.633 | INFO     | __main__:convert_dtypes:144 - FUNCTION START: convert_dtypes
+2025-11-27 15:31:06.638 | INFO     | __main__:convert_dtypes:149 - Converted Date to datetime.
+2025-11-27 15:31:06.638 | INFO     | __main__:convert_dtypes:155 - Converted Store to Int64.
+2025-11-27 15:31:06.644 | INFO     | __main__:convert_dtypes:168 - Standardized IsHoliday to boolean-like values.
+2025-11-27 15:31:06.644 | INFO     | __main__:remove_duplicates:181 - FUNCTION START: remove_duplicates with dataframe shape=(8190, 12)
+2025-11-27 15:31:06.648 | INFO     | __main__:remove_duplicates:186 - Original dataframe shape: (8190, 12)
+2025-11-27 15:31:06.648 | INFO     | __main__:remove_duplicates:187 - Deduped  dataframe shape: (8190, 12)
+2025-11-27 15:31:06.648 | INFO     | __main__:handle_missing_values:201 - FUNCTION START: handle_missing_values with dataframe shape=(8190, 12)
+2025-11-27 15:31:06.649 | INFO     | __main__:handle_missing_values:204 - Total missing values before handling: 24040
+2025-11-27 15:31:06.651 | INFO     | __main__:handle_missing_values:216 - Total missing values after handling: 24040
+2025-11-27 15:31:06.651 | INFO     | __main__:handle_missing_values:217 - 8190 records remaining after handling missing values.
+2025-11-27 15:31:06.651 | INFO     | __main__:remove_outliers:231 - FUNCTION START: remove_outliers with dataframe shape=(8190, 12)
+2025-11-27 15:31:06.652 | WARNING  | __main__:remove_outliers:234 - Weekly_Sales not found. Skipping outlier removal.
+2025-11-27 15:31:06.652 | INFO     | __main__:add_time_features:264 - FUNCTION START: add_time_features
+2025-11-27 15:31:06.657 | INFO     | __main__:add_time_features:274 - Added Year, Month, and WeekOfYear features.
+2025-11-27 15:31:06.658 | INFO     | __main__:save_prepared_data:103 - FUNCTION START: save_prepared_data with file_name=features_prepared.csv, dataframe shape=(8190, 15)
+2025-11-27 15:31:06.726 | INFO     | __main__:save_prepared_data:108 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\features_prepared.csv
+2025-11-27 15:31:06.727 | INFO     | __main__:main:328 - ============================================
+2025-11-27 15:31:06.727 | INFO     | __main__:main:329 - Original shape: (8190, 12)
+2025-11-27 15:31:06.727 | INFO     | __main__:main:330 - Cleaned shape:  (8190, 15)
+2025-11-27 15:31:06.728 | INFO     | __main__:main:331 - FINISHED prepare_walmart_sales.py
+2025-11-27 15:31:06.728 | INFO     | __main__:main:332 - ============================================
+2025-11-27 15:32:13.992 | INFO     | __main__:main:166 - ========================================
+2025-11-27 15:32:13.993 | INFO     | __main__:main:167 - STARTING prepare_train_data.py
+2025-11-27 15:32:13.993 | INFO     | __main__:main:168 - ========================================
+2025-11-27 15:32:13.993 | INFO     | __main__:read_raw_data:63 - READING: C:\Repos\walmart-sales-insights\data\raw\train.csv
+2025-11-27 15:32:14.149 | INFO     | __main__:read_raw_data:65 - Loaded dataframe shape: (421570, 5)
+2025-11-27 15:32:15.915 | INFO     | __main__:save_prepared_data:79 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\train_prepared.csv
+2025-11-27 15:32:15.915 | INFO     | __main__:main:197 - Final cleaned dataframe shape: (408740, 8)
+2025-11-27 15:32:15.915 | INFO     | __main__:main:198 - FINISHED prepare_train_data.py
+2025-11-27 15:32:15.917 | INFO     | __main__:main:199 - ========================================
+2025-11-27 15:32:33.233 | INFO     | __main__:main:166 - ========================================
+2025-11-27 15:32:33.233 | INFO     | __main__:main:167 - STARTING prepare_train_data.py
+2025-11-27 15:32:33.233 | INFO     | __main__:main:168 - ========================================
+2025-11-27 15:32:33.233 | INFO     | __main__:read_raw_data:63 - READING: C:\Repos\walmart-sales-insights\data\raw\train.csv
+2025-11-27 15:32:33.397 | INFO     | __main__:read_raw_data:65 - Loaded dataframe shape: (421570, 5)
+2025-11-27 15:32:35.380 | INFO     | __main__:save_prepared_data:79 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\train_prepared.csv
+2025-11-27 15:32:35.380 | INFO     | __main__:main:197 - Final cleaned dataframe shape: (408740, 8)
+2025-11-27 15:32:35.381 | INFO     | __main__:main:198 - FINISHED prepare_train_data.py
+2025-11-27 15:32:35.381 | INFO     | __main__:main:199 - ========================================
+2025-11-27 15:35:54.554 | INFO     | __main__:main:296 - ============================================
+2025-11-27 15:35:54.554 | INFO     | __main__:main:297 - STARTING prepare_walmart_sales.py
+2025-11-27 15:35:54.554 | INFO     | __main__:main:298 - ============================================
+2025-11-27 15:35:54.554 | INFO     | __main__:main:300 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:35:54.554 | INFO     | __main__:main:301 - src               : C:\Repos\walmart-sales-insights\src
+2025-11-27 15:35:54.554 | INFO     | __main__:main:302 - analytics_project : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 15:35:54.554 | INFO     | __main__:main:303 - data/raw          : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 15:35:54.554 | INFO     | __main__:main:304 - data/prepared     : C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 15:35:54.554 | INFO     | __main__:read_raw_data:83 - READING: C:\Repos\walmart-sales-insights\data\raw\features.csv
+2025-11-27 15:35:54.571 | INFO     | __main__:read_raw_data:85 - Loaded dataframe with shape: (8190, 12)
+2025-11-27 15:35:54.571 | INFO     | __main__:main:311 - Initial dataframe shape: (8190, 12)
+2025-11-27 15:35:54.571 | INFO     | __main__:main:312 - Initial dataframe columns: Store, Date, Temperature, Fuel_Price, MarkDown1, MarkDown2, MarkDown3, MarkDown4, MarkDown5, CPI, Unemployment, IsHoliday
+2025-11-27 15:35:54.571 | INFO     | __main__:convert_dtypes:144 - FUNCTION START: convert_dtypes
+2025-11-27 15:35:54.588 | INFO     | __main__:convert_dtypes:149 - Converted Date to datetime.
+2025-11-27 15:35:54.588 | INFO     | __main__:convert_dtypes:155 - Converted Store to Int64.
+2025-11-27 15:35:54.597 | INFO     | __main__:convert_dtypes:168 - Standardized IsHoliday to boolean-like values.
+2025-11-27 15:35:54.597 | INFO     | __main__:remove_duplicates:181 - FUNCTION START: remove_duplicates with dataframe shape=(8190, 12)
+2025-11-27 15:35:54.604 | INFO     | __main__:remove_duplicates:186 - Original dataframe shape: (8190, 12)
+2025-11-27 15:35:54.604 | INFO     | __main__:remove_duplicates:187 - Deduped  dataframe shape: (8190, 12)
+2025-11-27 15:35:54.604 | INFO     | __main__:handle_missing_values:201 - FUNCTION START: handle_missing_values with dataframe shape=(8190, 12)
+2025-11-27 15:35:54.605 | INFO     | __main__:handle_missing_values:204 - Total missing values before handling: 24040
+2025-11-27 15:35:54.607 | INFO     | __main__:handle_missing_values:216 - Total missing values after handling: 24040
+2025-11-27 15:35:54.607 | INFO     | __main__:handle_missing_values:217 - 8190 records remaining after handling missing values.
+2025-11-27 15:35:54.608 | INFO     | __main__:remove_outliers:231 - FUNCTION START: remove_outliers with dataframe shape=(8190, 12)
+2025-11-27 15:35:54.608 | WARNING  | __main__:remove_outliers:234 - Weekly_Sales not found. Skipping outlier removal.
+2025-11-27 15:35:54.608 | INFO     | __main__:add_time_features:264 - FUNCTION START: add_time_features
+2025-11-27 15:35:54.614 | INFO     | __main__:add_time_features:274 - Added Year, Month, and WeekOfYear features.
+2025-11-27 15:35:54.614 | INFO     | __main__:save_prepared_data:103 - FUNCTION START: save_prepared_data with file_name=features_prepared.csv, dataframe shape=(8190, 15)
+2025-11-27 15:35:54.683 | INFO     | __main__:save_prepared_data:108 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\features_prepared.csv
+2025-11-27 15:35:54.683 | INFO     | __main__:main:328 - ============================================
+2025-11-27 15:35:54.683 | INFO     | __main__:main:329 - Original shape: (8190, 12)
+2025-11-27 15:35:54.684 | INFO     | __main__:main:330 - Cleaned shape:  (8190, 15)
+2025-11-27 15:35:54.684 | INFO     | __main__:main:331 - FINISHED prepare_walmart_sales.py
+2025-11-27 15:35:54.685 | INFO     | __main__:main:332 - ============================================
+2025-11-27 15:36:02.171 | INFO     | __main__:main:296 - ============================================
+2025-11-27 15:36:02.171 | INFO     | __main__:main:297 - STARTING prepare_walmart_sales.py
+2025-11-27 15:36:02.171 | INFO     | __main__:main:298 - ============================================
+2025-11-27 15:36:02.171 | INFO     | __main__:main:300 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:36:02.171 | INFO     | __main__:main:301 - src               : C:\Repos\walmart-sales-insights\src
+2025-11-27 15:36:02.171 | INFO     | __main__:main:302 - analytics_project : C:\Repos\walmart-sales-insights\src\analytics_project
+2025-11-27 15:36:02.171 | INFO     | __main__:main:303 - data/raw          : C:\Repos\walmart-sales-insights\data\raw
+2025-11-27 15:36:02.171 | INFO     | __main__:main:304 - data/prepared     : C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 15:36:02.171 | INFO     | __main__:read_raw_data:83 - READING: C:\Repos\walmart-sales-insights\data\raw\features.csv
+2025-11-27 15:36:02.200 | INFO     | __main__:read_raw_data:85 - Loaded dataframe with shape: (8190, 12)
+2025-11-27 15:36:02.200 | INFO     | __main__:main:311 - Initial dataframe shape: (8190, 12)
+2025-11-27 15:36:02.201 | INFO     | __main__:main:312 - Initial dataframe columns: Store, Date, Temperature, Fuel_Price, MarkDown1, MarkDown2, MarkDown3, MarkDown4, MarkDown5, CPI, Unemployment, IsHoliday
+2025-11-27 15:36:02.202 | INFO     | __main__:convert_dtypes:144 - FUNCTION START: convert_dtypes
+2025-11-27 15:36:02.205 | INFO     | __main__:convert_dtypes:149 - Converted Date to datetime.
+2025-11-27 15:36:02.206 | INFO     | __main__:convert_dtypes:155 - Converted Store to Int64.
+2025-11-27 15:36:02.214 | INFO     | __main__:convert_dtypes:168 - Standardized IsHoliday to boolean-like values.
+2025-11-27 15:36:02.214 | INFO     | __main__:remove_duplicates:181 - FUNCTION START: remove_duplicates with dataframe shape=(8190, 12)
+2025-11-27 15:36:02.220 | INFO     | __main__:remove_duplicates:186 - Original dataframe shape: (8190, 12)
+2025-11-27 15:36:02.220 | INFO     | __main__:remove_duplicates:187 - Deduped  dataframe shape: (8190, 12)
+2025-11-27 15:36:02.221 | INFO     | __main__:handle_missing_values:201 - FUNCTION START: handle_missing_values with dataframe shape=(8190, 12)
+2025-11-27 15:36:02.222 | INFO     | __main__:handle_missing_values:204 - Total missing values before handling: 24040
+2025-11-27 15:36:02.224 | INFO     | __main__:handle_missing_values:216 - Total missing values after handling: 24040
+2025-11-27 15:36:02.224 | INFO     | __main__:handle_missing_values:217 - 8190 records remaining after handling missing values.
+2025-11-27 15:36:02.225 | INFO     | __main__:remove_outliers:231 - FUNCTION START: remove_outliers with dataframe shape=(8190, 12)
+2025-11-27 15:36:02.225 | WARNING  | __main__:remove_outliers:234 - Weekly_Sales not found. Skipping outlier removal.
+2025-11-27 15:36:02.225 | INFO     | __main__:add_time_features:264 - FUNCTION START: add_time_features
+2025-11-27 15:36:02.229 | INFO     | __main__:add_time_features:274 - Added Year, Month, and WeekOfYear features.
+2025-11-27 15:36:02.230 | INFO     | __main__:save_prepared_data:103 - FUNCTION START: save_prepared_data with file_name=features_prepared.csv, dataframe shape=(8190, 15)
+2025-11-27 15:36:02.303 | INFO     | __main__:save_prepared_data:108 - Prepared data saved to C:\Repos\walmart-sales-insights\data\prepared\features_prepared.csv
+2025-11-27 15:36:02.303 | INFO     | __main__:main:328 - ============================================
+2025-11-27 15:36:02.303 | INFO     | __main__:main:329 - Original shape: (8190, 12)
+2025-11-27 15:36:02.303 | INFO     | __main__:main:330 - Cleaned shape:  (8190, 15)
+2025-11-27 15:36:02.304 | INFO     | __main__:main:331 - FINISHED prepare_walmart_sales.py
+2025-11-27 15:36:02.304 | INFO     | __main__:main:332 - ============================================
+2025-11-27 15:37:52.199 | INFO     | __main__:main:236 - ============================================
+2025-11-27 15:37:52.199 | INFO     | __main__:main:237 - STARTING holiday_uplift_analysis.py
+2025-11-27 15:37:52.199 | INFO     | __main__:main:238 - ============================================
+2025-11-27 15:37:52.199 | INFO     | __main__:main:240 - PROJECT_ROOT      : C:\Repos\walmart-sales-insights
+2025-11-27 15:37:52.199 | INFO     | __main__:main:241 - PREPARED_DATA_DIR : C:\Repos\walmart-sales-insights\data\prepared
+2025-11-27 15:37:52.199 | INFO     | __main__:main:242 - Input file        : C:\Repos\walmart-sales-insights\data\prepared\train_prepared.csv
+2025-11-27 15:37:52.199 | INFO     | __main__:load_prepared_data:60 - Reading prepared data from: C:\Repos\walmart-sales-insights\data\prepared\train_prepared.csv
+2025-11-27 15:37:52.466 | INFO     | __main__:load_prepared_data:62 - Loaded prepared dataframe with shape: (408740, 8)
+2025-11-27 15:37:52.467 | INFO     | __main__:compute_store_level_uplift:77 - Computing store-level holiday uplift...
+2025-11-27 15:37:52.506 | INFO     | __main__:compute_store_level_uplift:124 - Computed store-level uplift for 45 stores (after filtering).
+2025-11-27 15:37:52.507 | INFO     | __main__:compute_store_dept_uplift:147 - Computing store-department-level holiday uplift...
+2025-11-27 15:37:52.547 | INFO     | __main__:compute_store_dept_uplift:198 - Filtered store-dept combinations from 3294 to 2442 using thresholds: NonHoliday_Weeks>=10, Holiday_Weeks>=2, NonHoliday_Mean>=1000.0
+2025-11-27 15:37:52.574 | INFO     | __main__:save_results:216 - Store-level uplift saved to: C:\Repos\walmart-sales-insights\data\prepared\store_holiday_uplift.csv
+2025-11-27 15:37:52.575 | INFO     | __main__:save_results:217 - Store-dept-level uplift saved to: C:\Repos\walmart-sales-insights\data\prepared\store_dept_holiday_uplift.csv
+2025-11-27 15:37:52.575 | INFO     | __main__:main:252 - Top 5 stores by holiday uplift (%):
+2025-11-27 15:37:52.585 | INFO     | __main__:main:253 -  Store  NonHoliday_Mean  Holiday_Mean  NonHoliday_Weeks  Holiday_Weeks  Absolute_Uplift  Relative_Uplift_Percent
+     3      4678.363504   5223.717315            8270.0          622.0       545.353811                11.656935
+     7      8223.070806   8966.551004            9068.0          687.0       743.480198                 9.041394
+     5      4993.472914   5342.419357            8357.0          638.0       348.946444                 6.988051
+     9      7917.368228   8442.854385            8154.0          618.0       525.486157                 6.637132
+    10     19017.236797  20219.086566            8782.0          664.0      1201.849769                 6.319792
+2025-11-27 15:37:52.585 | INFO     | __main__:main:255 - Top 5 store-dept combos by holiday uplift (%):
+2025-11-27 15:37:52.585 | INFO     | __main__:main:256 -  Store  Dept  NonHoliday_Mean  Holiday_Mean  NonHoliday_Weeks  Holiday_Weeks  Absolute_Uplift  Relative_Uplift_Percent
+    10    59      1750.795865      5407.524             133.0           10.0      3656.728135               208.860908
+    39    18      7722.406911     22877.168             123.0           10.0     15154.761089               196.244011
+     5     6      1049.405414      3075.032             133.0           10.0      2025.626586               193.026123
+    13    59      1188.407895      3182.235             133.0           10.0      1993.827105               167.772960
+    14    59      1225.309850      3267.107             133.0           10.0      2041.797150               166.635170
+2025-11-27 15:37:52.589 | INFO     | __main__:main:258 - ============================================
+2025-11-27 15:37:52.589 | INFO     | __main__:main:259 - FINISHED holiday_uplift_analysis.py
+2025-11-27 15:37:52.589 | INFO     | __main__:main:260 - ============================================
+2025-11-29 12:29:21.024 | INFO     | __main__:main:316 - ============================================
+2025-11-29 12:29:21.025 | INFO     | __main__:main:317 - STARTING prepare_insurance_charges.py
+2025-11-29 12:29:21.025 | INFO     | __main__:main:318 - ============================================
+2025-11-29 12:29:21.025 | INFO     | __main__:main:320 - PROJECT_ROOT      : C:\Repos\insurance-charges-analytics
+2025-11-29 12:29:21.025 | INFO     | __main__:main:321 - src               : C:\Repos\insurance-charges-analytics\src
+2025-11-29 12:29:21.025 | INFO     | __main__:main:322 - analytics_project : C:\Repos\insurance-charges-analytics\src\analytics_project
+2025-11-29 12:29:21.026 | INFO     | __main__:main:323 - data/raw          : C:\Repos\insurance-charges-analytics\data\raw
+2025-11-29 12:29:21.026 | INFO     | __main__:main:324 - data/prepared     : C:\Repos\insurance-charges-analytics\data\prepared
+2025-11-29 12:29:21.026 | INFO     | __main__:read_raw_data:84 - READING: C:\Repos\insurance-charges-analytics\data\raw\insurance.csv
+2025-11-29 12:29:21.036 | INFO     | __main__:read_raw_data:86 - Loaded dataframe with shape: (1338, 7)
+2025-11-29 12:29:21.037 | INFO     | __main__:main:331 - Initial dataframe shape: (1338, 7)
+2025-11-29 12:29:21.037 | INFO     | __main__:main:332 - Initial dataframe columns: age, sex, bmi, children, smoker, region, charges
+2025-11-29 12:29:21.038 | INFO     | __main__:convert_dtypes:146 - FUNCTION START: convert_dtypes
+2025-11-29 12:29:21.040 | INFO     | __main__:convert_dtypes:151 - Converted age to Int64.
+2025-11-29 12:29:21.040 | INFO     | __main__:convert_dtypes:155 - Converted children to Int64.
+2025-11-29 12:29:21.041 | INFO     | __main__:convert_dtypes:159 - Converted bmi to numeric (float).
+2025-11-29 12:29:21.042 | INFO     | __main__:convert_dtypes:163 - Converted charges to numeric (float).
+2025-11-29 12:29:21.043 | INFO     | __main__:convert_dtypes:174 - Standardized sex as lowercase string.
+2025-11-29 12:29:21.045 | INFO     | __main__:convert_dtypes:174 - Standardized smoker as lowercase string.
+2025-11-29 12:29:21.046 | INFO     | __main__:convert_dtypes:174 - Standardized region as lowercase string.
+2025-11-29 12:29:21.046 | INFO     | __main__:remove_duplicates:186 - FUNCTION START: remove_duplicates with dataframe shape=(1338, 7)
+2025-11-29 12:29:21.050 | INFO     | __main__:remove_duplicates:191 - Original dataframe shape: (1338, 7)
+2025-11-29 12:29:21.050 | INFO     | __main__:remove_duplicates:192 - Deduped  dataframe shape: (1337, 7)
+2025-11-29 12:29:21.050 | INFO     | __main__:handle_missing_values:206 - FUNCTION START: handle_missing_values with dataframe shape=(1337, 7)
+2025-11-29 12:29:21.051 | INFO     | __main__:handle_missing_values:209 - Total missing values before handling: 0
+2025-11-29 12:29:21.056 | INFO     | __main__:handle_missing_values:223 - Total missing values after handling: 0
+2025-11-29 12:29:21.056 | INFO     | __main__:handle_missing_values:224 - 1337 records remaining after handling missing values.
+2025-11-29 12:29:21.057 | INFO     | __main__:remove_outliers:237 - FUNCTION START: remove_outliers with dataframe shape=(1337, 7)
+2025-11-29 12:29:21.059 | INFO     | __main__:remove_outliers:255 - Removed 6 outlier rows based on charges.
+2025-11-29 12:29:21.060 | INFO     | __main__:remove_outliers:256 - 1331 records remaining after removing outliers.
+2025-11-29 12:29:21.060 | INFO     | __main__:add_risk_features:268 - FUNCTION START: add_risk_features
+2025-11-29 12:29:21.062 | INFO     | __main__:add_risk_features:278 - Added age_group feature.
+2025-11-29 12:29:21.065 | INFO     | __main__:add_risk_features:288 - Added bmi_category feature.
+2025-11-29 12:29:21.066 | INFO     | __main__:add_risk_features:293 - Added smoker_flag feature.
+2025-11-29 12:29:21.066 | INFO     | __main__:save_prepared_data:104 - FUNCTION START: save_prepared_data with file_name=insurance_prepared.csv, dataframe shape=(1331, 10)
+2025-11-29 12:29:21.124 | INFO     | __main__:save_prepared_data:109 - Prepared data saved to C:\Repos\insurance-charges-analytics\data\prepared\insurance_prepared.csv
+2025-11-29 12:29:21.124 | INFO     | __main__:main:350 - ============================================
+2025-11-29 12:29:21.124 | INFO     | __main__:main:351 - Original shape: (1338, 7)
+2025-11-29 12:29:21.124 | INFO     | __main__:main:352 - Cleaned shape:  (1331, 10)
+2025-11-29 12:29:21.124 | INFO     | __main__:main:353 - FINISHED prepare_insurance_charges.py
+2025-11-29 12:29:21.124 | INFO     | __main__:main:354 - ============================================

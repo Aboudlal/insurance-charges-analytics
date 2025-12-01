@@ -1,7 +1,7 @@
 import pandas as pd
 import pathlib
 import sqlite3
-from loguru import logger  # Make sure loguru is installed
+from loguru import logger  
 
 # --- 1. Path Configuration ---
 THIS_DIR: pathlib.Path = pathlib.Path(__file__).resolve().parent
